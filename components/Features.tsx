@@ -9,14 +9,18 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
-} from "@chakra-ui/react"
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from "react-icons/io5"
-import { ReactElement } from "react"
+} from "@chakra-ui/react";
+import {
+  IoAnalyticsSharp,
+  IoLogoBitcoin,
+  IoSearchSharp,
+} from "react-icons/io5";
+import { ReactElement } from "react";
 
 interface FeatureProps {
-  text: string
-  iconBg: string
-  icon?: ReactElement
+  text: string;
+  iconBg: string;
+  icon?: ReactElement;
 }
 
 const Feature = ({ text, icon, iconBg }: FeatureProps) => {
@@ -34,8 +38,8 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
       </Flex>
       <Text fontWeight={600}>{text}</Text>
     </Stack>
-  )
-}
+  );
+};
 
 export default function SplitWithImage() {
   return (
@@ -52,7 +56,7 @@ export default function SplitWithImage() {
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            Our Story
+            Our Services
           </Text>
           <Heading>A digital Product design agency</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
@@ -72,19 +76,19 @@ export default function SplitWithImage() {
                 <Icon as={IoAnalyticsSharp} color={"yellow.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
-              text={"Business Planning"}
+              text={"Tax Preparation"}
             />
             <Feature
               icon={<Icon as={IoLogoBitcoin} color={"green.500"} w={5} h={5} />}
               iconBg={useColorModeValue("green.100", "green.900")}
-              text={"Financial Planning"}
+              text={"IRS Representation"}
             />
             <Feature
               icon={
                 <Icon as={IoSearchSharp} color={"purple.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("purple.100", "purple.900")}
-              text={"Market Analysis"}
+              text={"Business Consultation"}
             />
           </Stack>
         </Stack>
@@ -100,5 +104,5 @@ export default function SplitWithImage() {
         </Flex>
       </SimpleGrid>
     </Container>
-  )
+  );
 }

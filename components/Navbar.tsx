@@ -241,6 +241,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
+    href: "/",
   },
   {
     label: "Services",
@@ -248,17 +249,17 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Tax Preparation",
         subLabel: "Trending Design to inspire you",
-        href: "/service/tax",
+        href: "/tax",
       },
       {
         label: "IRS Representation",
         subLabel: "Trending Design to inspire you",
-        href: "/service/representation",
+        href: "/representation",
       },
       {
         label: "Business Consultation",
         subLabel: "Trending Design to inspire you",
-        href: "/service/business",
+        href: "/business",
       },
     ],
   },
