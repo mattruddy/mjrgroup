@@ -92,7 +92,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <NextLink href={navItem.href ?? "/"} passHref legacyBehavior>
+              <NextLink href={navItem.href ?? "/"} passHref>
                 <Link
                   p={2}
                   fontSize={"sm"}
