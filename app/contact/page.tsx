@@ -25,7 +25,7 @@ export default function Contact() {
           <CardBody>
             <form
               method="post"
-              action="mailto:matt@mjrgroupllc.com?subject=Accounting Inquery"
+              action="mailto:matt@mjrgroupllc.com?subject=Accounting Inquiry"
             >
               <FormControl>
                 <FormLabel>Name</FormLabel>
