@@ -9,14 +9,13 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
-  Link,
 } from "@chakra-ui/react";
 import { IoManSharp } from "react-icons/io5";
 import { BiSolidBusiness } from "react-icons/bi";
 import { SiQuickbooks } from "react-icons/si";
 import { TbPigMoney } from "react-icons/tb";
 import { ReactElement } from "react";
-import NextLink from "next/link";
+import { Link } from "./NextLink";
 
 interface FeatureProps {
   text: string;
@@ -27,21 +26,19 @@ interface FeatureProps {
 
 const Feature = ({ text, icon, iconBg, href }: FeatureProps) => {
   return (
-    <NextLink href={href} passHref>
-      <Stack as={Link} direction={"row"} align={"center"}>
-        <Flex
-          w={8}
-          h={8}
-          align={"center"}
-          justify={"center"}
-          rounded={"full"}
-          bg={iconBg}
-        >
-          {icon}
-        </Flex>
-        <Text fontWeight={600}>{text}</Text>
-      </Stack>
-    </NextLink>
+    <Stack href={href} as={Link} direction={"row"} align={"center"}>
+      <Flex
+        w={8}
+        h={8}
+        align={"center"}
+        justify={"center"}
+        rounded={"full"}
+        bg={iconBg}
+      >
+        {icon}
+      </Flex>
+      <Text fontWeight={600}>{text}</Text>
+    </Stack>
   );
 };
 
