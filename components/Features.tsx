@@ -9,35 +9,39 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
-} from "react-icons/io5";
+import { IoManSharp } from "react-icons/io5";
+import { BiSolidBusiness } from "react-icons/bi";
+import { SiQuickbooks } from "react-icons/si";
+import { TbPigMoney } from "react-icons/tb";
 import { ReactElement } from "react";
+import NextLink from "next/link";
 
 interface FeatureProps {
   text: string;
   iconBg: string;
+  href: string;
   icon?: ReactElement;
 }
 
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+const Feature = ({ text, icon, iconBg, href }: FeatureProps) => {
   return (
-    <Stack direction={"row"} align={"center"}>
-      <Flex
-        w={8}
-        h={8}
-        align={"center"}
-        justify={"center"}
-        rounded={"full"}
-        bg={iconBg}
-      >
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{text}</Text>
-    </Stack>
+    <NextLink href={href} passHref>
+      <Stack as={Link} direction={"row"} align={"center"}>
+        <Flex
+          w={8}
+          h={8}
+          align={"center"}
+          justify={"center"}
+          rounded={"full"}
+          bg={iconBg}
+        >
+          {icon}
+        </Flex>
+        <Text fontWeight={600}>{text}</Text>
+      </Stack>
+    </NextLink>
   );
 };
 
@@ -72,23 +76,30 @@ export default function SplitWithImage() {
             }
           >
             <Feature
-              icon={
-                <Icon as={IoAnalyticsSharp} color={"yellow.500"} w={5} h={5} />
-              }
+              icon={<Icon as={TbPigMoney} color={"yellow.500"} w={5} h={5} />}
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
               text={"Tax Preparation"}
+              href="tax"
             />
             <Feature
-              icon={<Icon as={IoLogoBitcoin} color={"green.500"} w={5} h={5} />}
-              iconBg={useColorModeValue("green.100", "green.900")}
+              icon={<Icon as={IoManSharp} color={"orange.500"} w={5} h={5} />}
+              iconBg={useColorModeValue("orange.100", "orange.900")}
               text={"IRS Representation"}
+              href="representation"
             />
             <Feature
               icon={
-                <Icon as={IoSearchSharp} color={"purple.500"} w={5} h={5} />
+                <Icon as={BiSolidBusiness} color={"purple.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("purple.100", "purple.900")}
               text={"Business Consultation"}
+              href="business"
+            />
+            <Feature
+              icon={<Icon as={SiQuickbooks} color={"green.500"} w={5} h={5} />}
+              iconBg={useColorModeValue("green.100", "green.900")}
+              text={"QuickBooks Training"}
+              href="quickbooks"
             />
           </Stack>
         </Stack>
