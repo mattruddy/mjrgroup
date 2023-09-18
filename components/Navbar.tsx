@@ -240,41 +240,34 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "Home",
+  },
+  {
+    label: "Services",
     children: [
       {
-        label: "Explore Design Work",
+        label: "Tax Preparation",
         subLabel: "Trending Design to inspire you",
-        href: "#",
+        href: "/service/tax",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
+        label: "IRS Representation",
+        subLabel: "Trending Design to inspire you",
+        href: "/service/representation",
+      },
+      {
+        label: "Business Consultation",
+        subLabel: "Trending Design to inspire you",
+        href: "/service/business",
       },
     ],
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    label: "About",
+    href: "/about",
   },
   {
-    label: "Learn Design",
-    href: "#",
-  },
-  {
-    label: "Hire Designers",
-    href: "#",
+    label: "Contact Us",
+    href: "/contact",
   },
 ];
