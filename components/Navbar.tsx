@@ -61,8 +61,10 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Button as="a" href="/" variant={"link"}>
-              <Image h="50" w="50" src="/logo/logo.png" />
+            <Button as={NextLink} href="/" passHref variant={"link"}>
+              <Link>
+                <Image h="50" w="50" src="/logo/logo.png" />
+              </Link>
             </Button>
           </Text>
 
