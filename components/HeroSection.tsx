@@ -1,4 +1,4 @@
-import Head from "next/head"
+import Head from "next/head";
 import {
   Box,
   Heading,
@@ -9,7 +9,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-} from "@chakra-ui/react"
+} from "@chakra-ui/react";
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -88,7 +88,7 @@ export default function CallToActionWithAnnotation() {
         </Stack>
       </Container>
     </>
-  )
+  );
 }
 
 const Arrow = createIcon({
@@ -102,4 +102,4 @@ const Arrow = createIcon({
       fill="currentColor"
     />
   ),
-})
+});

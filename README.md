@@ -2,8 +2,6 @@
 
 This is a template for creating a landing page with Chakra UI and Next.js.
 
-![Landing Page Demo](demo/demo.gif)
-
 ## How it works
 
 Fork or download the repo and change whatever you need to change for your needs.
