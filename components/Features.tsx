@@ -9,13 +9,14 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
 import { IoManSharp } from "react-icons/io5";
 import { BiSolidBusiness } from "react-icons/bi";
 import { SiQuickbooks } from "react-icons/si";
 import { TbPigMoney } from "react-icons/tb";
 import { ReactElement } from "react";
-import { Link } from "./NextLink";
+// import { Link } from "./NextLink";
 
 interface FeatureProps {
   text: string;
