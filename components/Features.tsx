@@ -16,7 +16,6 @@ import { BiSolidBusiness } from "react-icons/bi";
 import { SiQuickbooks } from "react-icons/si";
 import { TbPigMoney } from "react-icons/tb";
 import { ReactElement } from "react";
-// import { Link } from "./NextLink";
 
 interface FeatureProps {
   text: string;
