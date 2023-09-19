@@ -1,6 +1,6 @@
 import { sendMail } from "@/services/sendEmail";
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   const { body, method } = req;
 
   const { message, name, email, phoneNumber } = JSON.parse(body);
