@@ -7,7 +7,7 @@ export default async function handler(req: any, res: any) {
 
   if (method === "POST") {
     const everything = `name: ${name}\nemail: ${email}\nphone number: ${phoneNumber}\nmessage: ${message}`;
-    // await sendMail("New Client Request", "mjruddy94@gmail.com", everything);
+    await sendMail("New Client Request", "mjruddy94@gmail.com", everything);
     return res.status(200).json({});
   }
 
