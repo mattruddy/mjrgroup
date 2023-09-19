@@ -15,7 +15,6 @@ import {
   useDisclosure,
   Image,
   Center,
-  Link,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -23,6 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import Link from "../components/NextLink";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -90,7 +90,7 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
-                href={navItem.href ?? "/"}
+                href={navItem.href ?? "#"}
                 p={2}
                 fontSize={"sm"}
                 fontWeight={500}
@@ -130,7 +130,7 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Link
-      href={href || "/"}
+      href={href || "#"}
       role={"group"}
       display={"block"}
       p={2}
@@ -221,7 +221,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} href={child.href ?? "/"} py={2}>
+              <Link key={child.label} href={child.href ?? "#"} py={2}>
                 {child.label}
               </Link>
             ))}
