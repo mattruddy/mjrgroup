@@ -4,13 +4,7 @@ import {
   CardHeader,
   HStack,
   Heading,
-  Table,
-  TableContainer,
-  Tbody,
   Text,
-  Th,
-  Thead,
-  Tr,
   VStack,
 } from "@chakra-ui/react";
 

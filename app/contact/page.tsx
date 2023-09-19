@@ -1,21 +1,24 @@
 "use client";
 
+import { ContactForm } from "@/components/ContactForm";
 import { ContactInfo } from "@/components/ContactInfo";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardHeader,
-  Center,
-  FormControl,
-  FormLabel,
-  Heading,
-  Input,
-  Textarea,
-  VStack,
-} from "@chakra-ui/react";
+import { Card, CardBody, CardHeader, Heading, VStack } from "@chakra-ui/react";
 
 export default function Contact() {
+  const sendEmail = async (
+    message: string,
+    name: string,
+    email: string,
+    phoneNumber: string
+  ) => {
+    const resp = await fetch("/api", {
+      cache: "no-store",
+      method: "POST",
+      body: JSON.stringify({ message, name, email, phoneNumber }),
+    });
+    console.log(await resp.json());
+  };
+
   return (
     <VStack
       w="100%"
@@ -30,26 +33,7 @@ export default function Contact() {
             <Heading>Contact Us</Heading>
           </CardHeader>
           <CardBody>
-            <form
-              method="post"
-              action="mailto:matt@mjrgroupllc.com?subject=Accounting Inquiry"
-            >
-              <FormControl>
-                <FormLabel>Name</FormLabel>
-                <Input name="name" />
-              </FormControl>
-              <FormControl>
-                <FormLabel>Email</FormLabel>
-                <Input name="email" />
-              </FormControl>
-              <FormControl>
-                <FormLabel>Message</FormLabel>
-                <Textarea name="message" />
-              </FormControl>
-              <Button type="submit" mt="20px">
-                Submit
-              </Button>
-            </form>
+            <ContactForm onSubmit={sendEmail} />
           </CardBody>
         </Card>
       </VStack>
