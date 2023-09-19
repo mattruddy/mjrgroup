@@ -1,5 +1,6 @@
 "use client";
 
+import { ContactInfo } from "@/components/ContactInfo";
 import {
   Button,
   Card,
@@ -16,9 +17,15 @@ import {
 
 export default function Contact() {
   return (
-    <VStack w="100%" p={{ base: 0, md: "20px" }}>
-      <Center w="100%" maxW="900px">
-        <Card w="100%" p={{ base: "0", md: "20px" }}>
+    <VStack
+      w="100%"
+      flexDir={{ base: "column", lg: "row" }}
+      justify={"center"}
+      align={"start"}
+      p="20px"
+    >
+      <VStack p={{ base: "0", lg: "20px" }} minW="500px">
+        <Card w="100%">
           <CardHeader>
             <Heading>Contact Us</Heading>
           </CardHeader>
@@ -45,7 +52,10 @@ export default function Contact() {
             </form>
           </CardBody>
         </Card>
-      </Center>
+      </VStack>
+      <VStack minW="400px" p={{ base: "0", lg: "20px" }}>
+        <ContactInfo />
+      </VStack>
     </VStack>
   );
 }
