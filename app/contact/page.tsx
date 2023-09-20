@@ -51,7 +51,7 @@ export default function Contact() {
         </Card>
       </VStack>
       <VStack
-        minW={{ base: "500px", sm: "100%", md: "500px", lg: "400px" }}
+        minW={{ base: "100%", md: "500px", lg: "400px" }}
         p={{ base: "0", lg: "20px" }}
         justify={"center"}
         align={"start"}
