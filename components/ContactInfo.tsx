@@ -1,12 +1,4 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  HStack,
-  Heading,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Card, CardBody, HStack, Link, Text, VStack } from "@chakra-ui/react";
 
 export const ContactInfo = () => {
   return (
@@ -15,11 +7,11 @@ export const ContactInfo = () => {
         <VStack>
           <HStack w="100%" justify={"space-between"}>
             <Text as="b">Phone</Text>
-            <Text>732-814-3113</Text>
+            <Link href="tel:732-814-3113">732-814-3113</Link>
           </HStack>
           <HStack w="100%" justify={"space-between"}>
             <Text as="b">Email</Text>
-            <Text>info@mjrgroupllc.com</Text>
+            <Link href="mailto:info@mjrgroupllc.com">info@mjrgroupllc.com</Link>
           </HStack>
         </VStack>
       </CardBody>
