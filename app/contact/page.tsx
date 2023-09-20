@@ -39,7 +39,7 @@ export default function Contact() {
         justify={"center"}
         align={"start"}
         p={{ base: "0", lg: "20px" }}
-        minW="500px"
+        minW={{ base: "100%", md: "500px" }}
       >
         <Heading p="12px">Contact Us</Heading>
         <Card variant={"outline"} w="100%">
@@ -51,7 +51,7 @@ export default function Contact() {
         </Card>
       </VStack>
       <VStack
-        minW="400px"
+        minW={{ base: "500px", sm: "100%", md: "500px", lg: "400px" }}
         p={{ base: "0", lg: "20px" }}
         justify={"center"}
         align={"start"}
