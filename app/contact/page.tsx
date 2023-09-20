@@ -2,7 +2,16 @@
 
 import { ContactForm } from "@/components/ContactForm";
 import { ContactInfo } from "@/components/ContactInfo";
-import { Card, CardBody, CardHeader, Heading, VStack } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  Center,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 
 export default function Contact() {
   const sendEmail = async (
@@ -20,26 +29,43 @@ export default function Contact() {
   };
 
   return (
-    <VStack
+    <Center
       w="100%"
       flexDir={{ base: "column", lg: "row" }}
-      justify={"center"}
-      align={"start"}
+      alignItems={{ base: "center", lg: "start" }}
       p="20px"
     >
-      <VStack p={{ base: "0", lg: "20px" }} minW="500px">
-        <Card w="100%">
-          <CardHeader>
-            <Heading>Contact Us</Heading>
-          </CardHeader>
+      <VStack
+        justify={"center"}
+        align={"start"}
+        p={{ base: "0", lg: "20px" }}
+        minW="500px"
+      >
+        <Heading p="12px">Contact Us</Heading>
+        <Card variant={"outline"} w="100%">
           <CardBody>
-            <ContactForm onSubmit={sendEmail} />
+            <Stack w="100%">
+              <ContactForm onSubmit={sendEmail} />
+            </Stack>
           </CardBody>
         </Card>
       </VStack>
-      <VStack minW="400px" p={{ base: "0", lg: "20px" }}>
+      <VStack
+        minW="400px"
+        p={{ base: "0", lg: "20px" }}
+        justify={"center"}
+        align={"start"}
+      >
+        <Heading p="12px">Information</Heading>
         <ContactInfo />
+        <Card w="100%" variant="filled">
+          <CardBody>
+            <Heading size={"md"}>Address</Heading>
+            <Text>104 Morris St #3</Text>
+            <Text>Jersey City, NJ 07302</Text>
+          </CardBody>
+        </Card>
       </VStack>
-    </VStack>
+    </Center>
   );
 }

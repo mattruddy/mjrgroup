@@ -10,10 +10,7 @@ import {
 
 export const ContactInfo = () => {
   return (
-    <Card w="100%">
-      <CardHeader>
-        <Heading>Information</Heading>
-      </CardHeader>
+    <Card variant={"outline"} w="100%">
       <CardBody>
         <VStack>
           <HStack w="100%" justify={"space-between"}>
