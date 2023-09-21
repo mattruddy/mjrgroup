@@ -14,23 +14,25 @@ export const ServiceLayout = ({
 }: ServiceLayoutProps) => {
   return (
     <VStack>
-      <VStack w="100%" align={"start"}>
-        <Heading p="24px">{title}</Heading>
+      <VStack align={"start"}>
+        <Heading size={"lg"} pl="24px" pt="24px">
+          {title}
+        </Heading>
+        <HStack flexDir={{ base: "column-reverse", md: "row" }}>
+          <VStack p="12px" w={{ base: "100%", md: "500px" }}>
+            <Quote body={body} />
+          </VStack>
+          <VStack p="12px">
+            <Image
+              w="300px"
+              alt={`service-${title}`}
+              src={imageSrc}
+              fallbackSrc="https://via.placeholder.com/150"
+              rounded={"md"}
+            />
+          </VStack>
+        </HStack>
       </VStack>
-      <HStack flexDir={{ base: "column-reverse", md: "row" }}>
-        <VStack p="12px" w={{ base: "100%", md: "500px" }}>
-          <Quote body={body} />
-        </VStack>
-        <VStack p="12px">
-          <Image
-            w="300px"
-            alt={`service-${title}`}
-            src={imageSrc}
-            fallbackSrc="https://via.placeholder.com/150"
-            rounded={"md"}
-          />
-        </VStack>
-      </HStack>
     </VStack>
   );
 };
