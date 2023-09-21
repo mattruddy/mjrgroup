@@ -55,18 +55,6 @@ const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const TestimonialText = ({ children }: { children: ReactNode }) => {
-  return (
-    <Text
-      textAlign={"center"}
-      color={useColorModeValue("gray.600", "gray.400")}
-      fontSize={"sm"}
-    >
-      {children}
-    </Text>
-  );
-};
-
 const TestimonialAvatar = ({
   src,
   name,
@@ -103,13 +91,11 @@ export default function WithSpeechBubbles() {
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 10, md: 4, lg: 10 }}
         >
-          {clients.map((client) => (
-            <Testimonial key={client.name}>
+          {clients.map((client, i) => (
+            <Testimonial key={`${i}-${client.name}`}>
               <TestimonialContent>
                 <TestimonialHeading>{client.quote.title}</TestimonialHeading>
-                <TestimonialText>
-                  <Quote body={client.quote.body} showQuoteIcon />
-                </TestimonialText>
+                <Quote body={client.quote.body} showQuoteIcon />
               </TestimonialContent>
               <TestimonialAvatar
                 src={client.imageSrc}

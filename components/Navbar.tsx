@@ -23,6 +23,7 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import Link from "../components/NextLink";
+import { useState } from "react";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -61,7 +62,7 @@ export default function WithSubnavigation() {
             color={useColorModeValue("gray.800", "white")}
           >
             <Button as={Link} href="/" variant={"link"}>
-              <Image h="50" w="50" src="/logo/logo.png" />
+              <Image alt="logo-mjrgroup" h="50" w="50" src="/logo/logo.png" />
             </Button>
           </Text>
 
@@ -78,56 +79,94 @@ export default function WithSubnavigation() {
   );
 }
 
-const DesktopNav = () => {
+const PopoverNavItem = ({ navItem }: { navItem: (typeof NAV_ITEMS)[0] }) => {
+  const { onToggle, isOpen, onOpen, onClose } = useDisclosure();
+
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
+    <Popover
+      trigger={"hover"}
+      placement={"bottom-start"}
+      isOpen={isOpen}
+      onOpen={onOpen}
+      onClose={onClose}
+    >
+      <PopoverTrigger>
+        <Button
+          variant={"link"}
+          fontSize={"sm"}
+          fontWeight={500}
+          color={linkColor}
+          onClick={onOpen}
+          _hover={{
+            textDecoration: "none",
+            color: linkHoverColor,
+          }}
+        >
+          {navItem.label}
+        </Button>
+      </PopoverTrigger>
+
+      {navItem.children && (
+        <PopoverContent
+          border={0}
+          boxShadow={"xl"}
+          bg={popoverContentBgColor}
+          p={4}
+          rounded={"xl"}
+          minW={"sm"}
+        >
+          <Stack>
+            {navItem.children.map((child) => (
+              <DesktopSubNav key={child.label} {...child} onClick={onClose} />
+            ))}
+          </Stack>
+        </PopoverContent>
+      )}
+    </Popover>
+  );
+};
+
+const DesktopNav = () => {
+  const linkColor = useColorModeValue("gray.600", "gray.200");
+  const linkHoverColor = useColorModeValue("gray.800", "white");
+
+  return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
-              <Link
-                href={navItem.href ?? "#"}
-                p={2}
-                fontSize={"sm"}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
-                {navItem.label}
-              </Link>
-            </PopoverTrigger>
-
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
-          </Popover>
+          {navItem.children ? (
+            <PopoverNavItem navItem={navItem} />
+          ) : (
+            <Link
+              href={navItem.href ?? "#"}
+              p={2}
+              fontSize={"sm"}
+              fontWeight={500}
+              color={linkColor}
+              _hover={{
+                textDecoration: "none",
+                color: linkHoverColor,
+              }}
+            >
+              {navItem.label}
+            </Link>
+          )}
         </Box>
       ))}
     </Stack>
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({
+  label,
+  href,
+  subLabel,
+  onClick,
+}: NavItem & { onClick: () => void }) => {
   return (
     <Link
       href={href || "#"}
@@ -135,6 +174,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
+      onClick={onClick}
       _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
