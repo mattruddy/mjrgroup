@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -8,11 +8,13 @@ import {
   Container,
   Avatar,
   useColorModeValue,
-} from "@chakra-ui/react"
+} from "@chakra-ui/react";
+import { PAGE_DATA } from "@/data";
+import { Quote } from "./Quote";
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
-  return <Box>{children}</Box>
-}
+  return <Box>{children}</Box>;
+};
 
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
@@ -42,16 +44,16 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
     >
       {children}
     </Stack>
-  )
-}
+  );
+};
 
 const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   return (
     <Heading as={"h3"} fontSize={"xl"}>
       {children}
     </Heading>
-  )
-}
+  );
+};
 
 const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
@@ -62,21 +64,21 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
     >
       {children}
     </Text>
-  )
-}
+  );
+};
 
 const TestimonialAvatar = ({
   src,
   name,
   title,
 }: {
-  src: string
-  name: string
-  title: string
+  src: string;
+  name: string;
+  title: string;
 }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={src}  mb={2} />
+      <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
@@ -84,71 +86,40 @@ const TestimonialAvatar = ({
         </Text>
       </Stack>
     </Flex>
-  )
-}
+  );
+};
 
 export default function WithSpeechBubbles() {
+  const { title, subTitle, clients } = PAGE_DATA.page.home.sectionThree;
+
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <Heading>Our Clients Speak</Heading>
-          <Text>We have been working with clients around the world</Text>
+          <Heading>{title}</Heading>
+          <Text>{subTitle}</Text>
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 10, md: 4, lg: 10 }}
         >
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
+          {clients.map((client) => (
+            <Testimonial key={client.name}>
+              <TestimonialContent>
+                <TestimonialHeading>{client.quote.title}</TestimonialHeading>
+                <TestimonialText>
+                  <Quote body={client.quote.body} showQuoteIcon />
+                </TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar
+                src={client.imageSrc}
+                name={client.name}
+                title={client.occupation}
+              />
+            </Testimonial>
+          ))}
         </Stack>
       </Container>
     </Box>
-  )
+  );
 }

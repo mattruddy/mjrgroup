@@ -1,11 +1,9 @@
 "use client";
 
-import { Heading, VStack } from "@chakra-ui/react";
+import { ServiceLayout } from "@/components/ServiceLayout";
+import { PAGE_DATA } from "@/data";
 
 export default function QuickBooks() {
-  return (
-    <VStack>
-      <Heading>QuickBooks</Heading>
-    </VStack>
-  );
+  const { title, body } = PAGE_DATA.page.quickBooksTraining.sectionOne;
+  return <ServiceLayout title={title} body={body} />;
 }

@@ -10,8 +10,11 @@ import {
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
+import { PAGE_DATA } from "@/data";
 
 export default function CallToActionWithAnnotation() {
+  const { title, subTitle } = PAGE_DATA.page.home.sectionOne;
+
   return (
     <>
       <Head>
@@ -33,16 +36,13 @@ export default function CallToActionWithAnnotation() {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Make money from <br />
+            {title.start}
+            <br />
             <Text as={"span"} color={"green.400"}>
-              your audience
+              {title.end}
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
-          </Text>
+          <Text color={"gray.500"}>{subTitle}</Text>
           <Stack
             direction={"column"}
             spacing={3}

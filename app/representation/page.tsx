@@ -1,11 +1,9 @@
 "use client";
 
-import { Heading, VStack } from "@chakra-ui/react";
+import { ServiceLayout } from "@/components/ServiceLayout";
+import { PAGE_DATA } from "@/data";
 
 export default function Representation() {
-  return (
-    <VStack>
-      <Heading>IRS Representation</Heading>
-    </VStack>
-  );
+  const { title, body } = PAGE_DATA.page.irsRepresentation.sectionOne;
+  return <ServiceLayout title={title} body={body} />;
 }
