@@ -39,7 +39,7 @@ export default function About() {
             {sectionTwo.title}
           </Heading>
           <VStack p="12px">
-            <Quote body={sectionTwo.body} />
+            <Quote body={sectionTwo.body} showQuoteIcon />
           </VStack>
         </VStack>
       </VStack>
