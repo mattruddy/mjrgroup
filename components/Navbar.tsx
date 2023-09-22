@@ -96,6 +96,8 @@ const PopoverNavItem = ({ navItem }: { navItem: (typeof NAV_ITEMS)[0] }) => {
     >
       <PopoverTrigger>
         <Button
+          h="100%"
+          w="100%"
           variant={"link"}
           fontSize={"sm"}
           fontWeight={500}
