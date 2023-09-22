@@ -6,9 +6,11 @@ import { FaQuoteLeft } from "react-icons/fa";
 export function Quote({
   body,
   showQuoteIcon = false,
+  isHtml = false,
 }: {
   body: string;
   showQuoteIcon?: boolean;
+  isHtml?: boolean;
 }) {
   return (
     <HStack alignItems="stretch" justify="flex-start">
@@ -23,7 +25,11 @@ export function Quote({
           h="100%"
         />
       </VStack>
-      <Text textAlign="start">{body}</Text>
+      {isHtml ? (
+        <Text dangerouslySetInnerHTML={{ __html: body }} />
+      ) : (
+        <Text textAlign="start">{body}</Text>
+      )}
     </HStack>
   );
 }
