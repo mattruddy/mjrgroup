@@ -1,13 +1,13 @@
-"use client"
-import { ChakraProvider } from "@chakra-ui/react"
+"use client";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-import WithSubnavigation from "@/components/Navbar"
-import SmallWithSocial from "@/components/Footer"
+import WithSubnavigation from "@/components/Navbar";
+import SmallWithSocial from "@/components/Footer";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -18,14 +18,21 @@ export default function RootLayout({
       <head />
 
       <body>
-        <ChakraProvider>
+        <ChakraProvider
+          theme={extendTheme({
+            fonts: {
+              heading: "Nixie One",
+              body: "Raleway, sans-serif",
+            },
+          })}
+        >
           <div>
             <WithSubnavigation />
             {children}
-            <SmallWithSocial/>
+            <SmallWithSocial />
           </div>
         </ChakraProvider>
       </body>
     </html>
-  )
+  );
 }
