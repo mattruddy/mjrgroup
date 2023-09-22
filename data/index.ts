@@ -99,7 +99,7 @@ export const PAGE_DATA = {
       sectionTwo: {
         title: "Mission",
         body: `
-        Her mom had warned her. She had been warned time and again, but she had refused to believe her. She had done everything right and she knew she would be rewarded for doing so with the promotion. So when the promotion was given to her main rival, it not only stung, it threw her belief system into disarray. It was her first big lesson in life, but not the last.
+        Our mission is to provide individuals and businesses with comprehensive, accurate, and personalized tax solutions. We are committed to delivering expert financial guidance, minimizing tax liabilities, and ensuring compliance while fostering trust and building lasting client relationships. Our dedicated team of professionals strives to simplify the complex world of taxes, empowering our clients to achieve their financial goals and secure their financial future.
         `,
       },
     },
