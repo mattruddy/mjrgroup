@@ -38,7 +38,9 @@ export default function About() {
           <Heading size="lg" pl="24px" pt="24px">
             {sectionTwo.title}
           </Heading>
-          <Quote body={sectionTwo.body} />
+          <VStack p="12px">
+            <Quote body={sectionTwo.body} />
+          </VStack>
         </VStack>
       </VStack>
     </VStack>
