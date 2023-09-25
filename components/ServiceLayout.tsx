@@ -46,7 +46,11 @@ export const ServiceLayout = ({
           <Heading size={"lg"} pl="24px" pt="24px">
             Book Consultation
           </Heading>
-          <Card ml="16px" mb="24px" w={{ base: "100%", md: "500px" }}>
+          <Card
+            ml={{ base: 0, md: "16px" }}
+            mb="24px"
+            w={{ base: "100%", md: "500px" }}
+          >
             <CardBody>
               <ContactForm defaultService={defaultService} />
             </CardBody>
