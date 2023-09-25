@@ -2,7 +2,7 @@ import { Card, CardBody, HStack, Link, Text, VStack } from "@chakra-ui/react";
 
 export const ContactInfo = () => {
   return (
-    <Card variant={"outline"} w="100%">
+    <Card variant={"outline"} w="100%" background={"transparent"}>
       <CardBody>
         <VStack>
           <HStack w="100%" justify={"space-between"}>
