@@ -5,5 +5,11 @@ import { PAGE_DATA } from "@/data";
 
 export default function Business() {
   const { title, body } = PAGE_DATA.page.businessConsultation.sectionOne;
-  return <ServiceLayout title={title} body={body} />;
+  return (
+    <ServiceLayout
+      title={title}
+      body={body}
+      defaultService="Business Consultation"
+    />
+  );
 }

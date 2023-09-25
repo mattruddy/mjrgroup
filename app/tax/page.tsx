@@ -6,5 +6,7 @@ import { Heading, VStack } from "@chakra-ui/react";
 
 export default function Tax() {
   const { title, body } = PAGE_DATA.page.taxPreparation.sectionOne;
-  return <ServiceLayout title={title} body={body} />;
+  return (
+    <ServiceLayout title={title} body={body} defaultService="Tax Preparation" />
+  );
 }

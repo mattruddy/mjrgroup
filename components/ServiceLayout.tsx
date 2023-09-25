@@ -1,16 +1,26 @@
-import { HStack, Heading, Image, VStack } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  HStack,
+  Heading,
+  Image,
+  VStack,
+} from "@chakra-ui/react";
 import { Quote } from "./Quote";
+import { ContactForm, SERVICE_TYPE } from "./ContactForm";
 
 interface ServiceLayoutProps {
   title: string;
   body: string;
   imageSrc?: string;
+  defaultService?: SERVICE_TYPE;
 }
 
 export const ServiceLayout = ({
   title,
   body,
   imageSrc,
+  defaultService,
 }: ServiceLayoutProps) => {
   return (
     <VStack>
@@ -32,6 +42,16 @@ export const ServiceLayout = ({
             />
           </VStack>
         </HStack>
+        <VStack align={"start"} w="100%">
+          <Heading size={"lg"} pl="24px" pt="24px">
+            Book Consultation
+          </Heading>
+          <Card ml="16px" mb="24px" w={{ base: "100%", md: "500px" }}>
+            <CardBody>
+              <ContactForm defaultService={defaultService} />
+            </CardBody>
+          </Card>
+        </VStack>
       </VStack>
     </VStack>
   );

@@ -315,7 +315,7 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "/about",
   },
   {
-    label: "Contact Us",
+    label: "Book Consultation",
     href: "/contact",
   },
 ];

@@ -2,15 +2,14 @@
 
 This is a template for creating a landing page with Chakra UI and Next.js.
 
-## How it works
+## TODO
 
-Fork or download the repo and change whatever you need to change for your needs.
+[] update contact form
+[] change contact us to book an appointment
+[] change open ended to a multiselect of services
+[] add a field for method of service (virtual, in person, phone)
+[] add to every service page
+[]
 
-## Running Locally
 
-Can run the application in VS Code or a terminal and it will be available at `http://localhost:3000`.
-
-```bash
-npm install
-npm run dev
-```
+[] offer in comprimse 

@@ -5,7 +5,6 @@ import { ContactInfo } from "@/components/ContactInfo";
 import {
   Card,
   CardBody,
-  CardHeader,
   Center,
   Heading,
   Stack,
@@ -14,20 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function Contact() {
-  const sendEmail = async (
-    message: string,
-    name: string,
-    email: string,
-    phoneNumber: string
-  ) => {
-    const resp = await fetch("/api", {
-      cache: "no-store",
-      method: "POST",
-      body: JSON.stringify({ message, name, email, phoneNumber }),
-    });
-    console.log(await resp.json());
-  };
-
+  d;
   return (
     <Center
       w="100%"
@@ -41,11 +27,11 @@ export default function Contact() {
         p={{ base: "0", lg: "20px" }}
         minW={{ base: "100%", md: "500px" }}
       >
-        <Heading p="12px">Contact Us</Heading>
+        <Heading p="12px">Book Consultation</Heading>
         <Card variant={"outline"} w="100%">
           <CardBody>
             <Stack w="100%">
-              <ContactForm onSubmit={sendEmail} />
+              <ContactForm />
             </Stack>
           </CardBody>
         </Card>
@@ -60,8 +46,8 @@ export default function Contact() {
         <ContactInfo />
         <Card w="100%" variant="filled">
           <CardBody>
-            <Heading size={"md"}>Address</Heading>
-            <Text>104 Morris St #3</Text>
+            <Heading size={"md"}>Headquarters</Heading>
+            <Text>104 Morris St</Text>
             <Text>Jersey City, NJ 07302</Text>
           </CardBody>
         </Card>

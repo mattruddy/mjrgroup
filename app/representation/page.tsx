@@ -5,5 +5,11 @@ import { PAGE_DATA } from "@/data";
 
 export default function Representation() {
   const { title, body } = PAGE_DATA.page.irsRepresentation.sectionOne;
-  return <ServiceLayout title={title} body={body} />;
+  return (
+    <ServiceLayout
+      title={title}
+      body={body}
+      defaultService="IRS Representation"
+    />
+  );
 }
