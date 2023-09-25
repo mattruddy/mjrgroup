@@ -1,6 +1,7 @@
 "use client";
 
 import { Quote } from "@/components/Quote";
+import { StandardSection } from "@/components/StandardSection";
 import { PAGE_DATA } from "@/data";
 import {
   Card,
@@ -34,14 +35,11 @@ export default function About() {
             />
           </VStack>
         </HStack>
-        <VStack align={"start"}>
-          <Heading size="lg" pl="24px" pt="24px">
-            {sectionTwo.title}
-          </Heading>
-          <VStack p="12px">
-            <Quote body={sectionTwo.body} showQuoteIcon />
-          </VStack>
-        </VStack>
+        <StandardSection
+          title={sectionTwo.title}
+          body={sectionTwo.body}
+          isQuote
+        />
       </VStack>
     </VStack>
   );

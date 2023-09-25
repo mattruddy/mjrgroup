@@ -8,10 +8,12 @@ import {
 } from "@chakra-ui/react";
 import { Quote } from "./Quote";
 import { ContactForm, SERVICE_TYPE } from "./ContactForm";
+import { StandardSection } from "./StandardSection";
 
 interface ServiceLayoutProps {
   title: string;
   body: string;
+  sections?: { title: string; body: string }[];
   imageSrc?: string;
   defaultService?: SERVICE_TYPE;
 }
@@ -19,6 +21,7 @@ interface ServiceLayoutProps {
 export const ServiceLayout = ({
   title,
   body,
+  sections,
   imageSrc,
   defaultService,
 }: ServiceLayoutProps) => {
@@ -42,6 +45,13 @@ export const ServiceLayout = ({
             />
           </VStack>
         </HStack>
+        {sections?.map((section) => (
+          <StandardSection
+            key={section.title}
+            title={section.title}
+            body={section.body}
+          />
+        ))}
         <VStack align={"start"} w="100%">
           <Heading size={"lg"} pl="24px" pt="24px">
             Book Consultation

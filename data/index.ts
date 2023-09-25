@@ -56,6 +56,18 @@ export const PAGE_DATA = {
         imageFile: undefined,
         body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
       },
+      additionalSections: [
+        {
+          title: "Individual Taxes",
+          body: `Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities. It involves gathering financial documents, calculating taxable income, deductions, and credits, and then accurately completing and filing annual income tax returns. Tax professionals also offer guidance on tax planning, compliance with tax laws, and addressing specific tax-related questions and concerns. They may represent clients in dealings with tax authorities and provide advice on optimizing tax outcomes based on individual financial situations.
+          `,
+        },
+        {
+          title: "Business Taxes",
+          body: `Business tax preparation is a process that involves organizing and calculating a company's financial information to fulfill its tax obligations. This includes determining the business's taxable income, eligible deductions, and credits, as well as ensuring compliance with tax laws and regulations. Tax professionals, such as certified public accountants (CPAs) or tax consultants, assist businesses in accurately completing and filing their tax returns. Additionally, they may offer advice on tax-saving strategies, provide guidance during audits or tax-related inquiries, and help with tax planning to optimize the company's financial situation. Business tax preparation is essential for maintaining financial transparency, meeting legal requirements, and minimizing tax liabilities.
+          `,
+        },
+      ],
     },
     irsRepresentation: {
       sectionOne: {
@@ -63,6 +75,20 @@ export const PAGE_DATA = {
         imageFile: undefined,
         body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
       },
+      additionalSections: [
+        {
+          title: "IRS Installment Agreements",
+          body: `Owing money to the IRS is stressful. But one of the remarkable things about the IRS is they base everything on the ability to pay. It doesn’t matter how much you owe. Rather, the focus is on your current financial situation. If you cannot afford large monthly payments, the IRS will not require large monthly payments. If you need help repaying IRS tax debt, contact me today to discuss payment options.`,
+        },
+        {
+          title: "IRS Offer in Compromise",
+          body: `Sometimes the amount owed to the IRS is insurmountable. It simply will never be repaid. In these cases, the IRS may settle the tax liability. But don’t be fooled by tax resolution companies who blindly promise to settle the debt instantly. The IRS offer in compromise program is a formal process, with many intricacies. More than half of all offers submitted are rejected. But our success rate is much higher. Why? Experience and honesty. We only file offers in compromise if we honestly believe they have a high success of being accepted, and we have the experience to know when that is the case. Contact me to discuss whether an IRS offer in compromise is a viable option for you.`,
+        },
+        {
+          title: "IRS Audits",
+          body: `Of all tax issues to have, an audit may be the most stressful. It’s stressful because it’s an unknown and new experience. But it’s not a new experience for me. As a tax attorney in NJ, I’ve handled audits ranging from substantiation audits of small businesses to audits involving complex accounting rules with millions of dollars at stake. As your tax attorney NJ, I’ll give you a realistic outlook of how the audit will proceed and what you can expect. Contact me about your IRS audit.`,
+        },
+      ],
     },
     businessConsultation: {
       sectionOne: {
