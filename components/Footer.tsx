@@ -29,18 +29,7 @@ export default function SmallWithSocial() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <VStack>
-          <Text>© 2023 MJR Group LLC. All rights reserved</Text>
-          <ContactInfo />
-        </VStack>
-        <VStack align={"start"}>
-          <Text as="b">Headquarters</Text>
-          <Text>
-            104 Morris St
-            <br />
-            Jersey City, NJ 07302
-          </Text>
-        </VStack>
+        <Text>© 2023 MJR Group LLC. All rights reserved</Text>
       </Container>
     </Box>
   );
