@@ -21,7 +21,10 @@ export default function About() {
         <Heading size="lg" pl="24px" pt="24px">
           {title}
         </Heading>
-        <HStack flexDir={{ base: "column-reverse", md: "row" }}>
+        <HStack
+          align={{ base: "center", md: "start" }}
+          flexDir={{ base: "column-reverse", md: "row" }}
+        >
           <VStack p="12px" w={{ base: "100%", md: "500px" }}>
             <Quote body={sectionOne.body} isHtml />
           </VStack>
@@ -31,7 +34,7 @@ export default function About() {
               w="300px"
               src={sectionOne.imageSrc}
               fallbackSrc="https://via.placeholder.com/150"
-              rounded={"md"}
+              shadow={"2xl"}
             />
           </VStack>
         </HStack>
