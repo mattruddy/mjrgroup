@@ -4,13 +4,11 @@ import {
   Heading,
   Container,
   Text,
-  Button,
   Stack,
-  Icon,
-  useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
 import { PAGE_DATA } from "@/data";
+import Link from "../components/NextLink";
 
 export default function CallToActionWithAnnotation() {
   const { title, subTitle } = PAGE_DATA.page.home.sectionOne;
@@ -51,40 +49,7 @@ export default function CallToActionWithAnnotation() {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Button
-              colorScheme={"green"}
-              bg={"green.400"}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: "green.500",
-              }}
-            >
-              Get Started
-            </Button>
-            <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-              Learn more
-            </Button>
-            <Box>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue("gray.800", "gray.300")}
-                w={71}
-                position={"absolute"}
-                right={-71}
-                top={"10px"}
-              />
-              <Text
-                fontSize={"lg"}
-                fontFamily={"Caveat"}
-                position={"absolute"}
-                right={"-125px"}
-                top={"-15px"}
-                transform={"rotate(10deg)"}
-              >
-                Starting at $15/mo
-              </Text>
-            </Box>
+            <Link href="/about">Learn more</Link>
           </Stack>
         </Stack>
       </Container>
