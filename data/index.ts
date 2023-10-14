@@ -2,14 +2,14 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: { start: "Simplify Tax Season", end: "with Proven Expertise" },
+        title: { start: "Tax Services Made Simple", end: "with Proven Expertise" },
         subTitle:
-          "Monetize your content by charging your most loyal readers and reward them loyalty points. Give back to your loyal readers by granting them access to your pre-releases and sneak-peaks.",
+          "Welcome to MJR Group, where financial peace of mind begins. Our team of seasoned professionals, holding both Enrolled Agent and CPA certifications, are here to navigate the complexities of your finances, so you can focus on what matters most to you.",
       },
       sectionTwo: {
         title: "Best in Class Accounting Services",
         subTitle:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",
+          "We're more than just accountants; we're your dedicated partners in prosperity. Let's build a brighter financial future together. For tax preparation, trust our expertise. Facing IRS issues? We're your dedicated representatives. Seeking mastery in QuickBooks? Count on us for professional guidance.",
         imageSrc:
           "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       },
