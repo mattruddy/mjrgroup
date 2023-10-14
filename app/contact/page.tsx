@@ -43,13 +43,6 @@ export default function Contact() {
       >
         <Heading p="12px">Information</Heading>
         <ContactInfo />
-        <Card w="100%" variant="filled">
-          <CardBody>
-            <Heading size={"md"}>Headquarters</Heading>
-            <Text>104 Morris St</Text>
-            <Text>Jersey City, NJ 07302</Text>
-          </CardBody>
-        </Card>
       </VStack>
     </Center>
   );
