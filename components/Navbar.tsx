@@ -15,6 +15,7 @@ import {
   useDisclosure,
   Image,
   Center,
+  Heading,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -69,6 +70,9 @@ export default function WithSubnavigation() {
           <Center display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Center>
+        </Flex>
+        <Flex>
+          <Heading size="md">MJR GROUP</Heading>
         </Flex>
       </Flex>
 

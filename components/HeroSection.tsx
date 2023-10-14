@@ -32,9 +32,10 @@ export default function CallToActionWithAnnotation() {
           py={{ base: 20, md: 36 }}
         >
           <Heading
-            fontWeight={600}
+            fontWeight="extrabold"
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
+            color="green.400"
           >
             {title.start}
             <br />
