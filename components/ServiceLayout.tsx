@@ -4,6 +4,7 @@ import {
   HStack,
   Heading,
   Image,
+  Stack,
   VStack,
 } from "@chakra-ui/react";
 import { Quote } from "./Quote";
@@ -53,6 +54,16 @@ export const ServiceLayout = ({
             body={section.body}
           />
         ))}
+        <VStack p="24px" align={"start"} w="100%">
+          <Heading>Book Free Consultation</Heading>
+          <Card m="12px" variant={"outline"} w="100%">
+            <CardBody>
+              <Stack w="100%">
+                <ContactForm defaultService={defaultService} />
+              </Stack>
+            </CardBody>
+          </Card>
+        </VStack>
       </VStack>
     </VStack>
   );

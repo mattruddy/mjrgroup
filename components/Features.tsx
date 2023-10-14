@@ -46,7 +46,11 @@ const Feature = ({ text, icon, iconBg, href }: FeatureProps) => {
 export default function SplitWithImage() {
   const { title, subTitle, imageSrc } = PAGE_DATA.page.home.sectionTwo;
   return (
-    <Container maxW={"5xl"} py={12}>
+    <Container
+      maxW={"5xl"}
+      py={12}
+      bg={useColorModeValue("gray.100", "gray.700")}
+    >
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Text

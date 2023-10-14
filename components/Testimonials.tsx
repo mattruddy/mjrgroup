@@ -81,7 +81,7 @@ export default function WithSpeechBubbles() {
   const { title, subTitle, clients } = PAGE_DATA.page.home.sectionThree;
 
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+    <Box>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>{title}</Heading>
