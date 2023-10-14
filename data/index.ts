@@ -2,7 +2,7 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: { start: "MJR Group", end: "Tax Professionals" },
+        title: { start: "Simplify Tax Season", end: "with Proven Expertise" },
         subTitle:
           "Monetize your content by charging your most loyal readers and reward them loyalty points. Give back to your loyal readers by granting them access to your pre-releases and sneak-peaks.",
       },
