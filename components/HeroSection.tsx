@@ -35,22 +35,9 @@ export default function CallToActionWithAnnotation() {
             lineHeight={"110%"}
             color="green.400"
           >
-            {title.start}
-            <br />
-            <Text as={"span"} color={"green.400"}>
-              {title.end}
-            </Text>
+            {title}
           </Heading>
           <Text color={"gray.500"}>{subTitle}</Text>
-          <Stack
-            direction={"column"}
-            spacing={3}
-            align={"center"}
-            alignSelf={"center"}
-            position={"relative"}
-          >
-            <Link href="/about">Learn more</Link>
-          </Stack>
         </Stack>
       </Container>
     </>

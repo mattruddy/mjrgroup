@@ -2,7 +2,7 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: { start: "Tax Services Made Simple", end: "with Proven Expertise" },
+        title: "Tax Services Made Simple with Proven Expertise",
         subTitle:
           "Welcome to MJR Group, where financial peace of mind begins. Our team of seasoned professionals, holding both Enrolled Agent and CPA certifications, are here to navigate the complexities of your finances, so you can focus on what matters most to you.",
       },
