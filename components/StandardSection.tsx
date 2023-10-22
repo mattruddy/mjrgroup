@@ -7,6 +7,7 @@ import {
   Flex,
   Wrap,
   WrapItem,
+  Text,
 } from "@chakra-ui/react";
 import { Quote } from "./Quote";
 
@@ -35,9 +36,11 @@ export const StandardSection = ({
         {sections?.map((section, i) => (
           <WrapItem key={i}>
             <Card p="12px" w="250px" variant={"unstyled"}>
-              <CardHeader pb="12px">{section.title}</CardHeader>
+              <CardHeader pb="12px" fontWeight={"bold"}>
+                {section.title}
+              </CardHeader>
               <CardBody>
-                <Quote body={section.body} showQuoteIcon={false} />
+                <Text fontSize={"sm"}>{section.body}</Text>
               </CardBody>
             </Card>
           </WrapItem>
