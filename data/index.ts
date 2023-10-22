@@ -62,6 +62,32 @@ export const PAGE_DATA = {
             title: "Individual Taxes",
             body: `Our clientele is as diverse as the financial landscapes they navigate and we understand that every individual has distinct financial needs. No matter your situation, we're dedicated to helping you achieve financial success with our tailored approach.
             `,
+            sections: [
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+              {
+                title: "Testing",
+                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+              },
+            ],
           },
         ],
       },

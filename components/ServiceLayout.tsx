@@ -14,7 +14,11 @@ import { StandardSection } from "./StandardSection";
 interface ServiceLayoutProps {
   title: string;
   body: string;
-  sections?: { title: string; body: string }[];
+  sections?: {
+    title: string;
+    body: string;
+    sections?: { title: string; body: string }[];
+  }[];
   imageSrc?: string;
   defaultService?: SERVICE_TYPE;
 }
@@ -52,6 +56,7 @@ export const ServiceLayout = ({
             key={section.title}
             title={section.title}
             body={section.body}
+            sections={section.sections}
           />
         ))}
         <VStack p="24px" align={"start"} w="100%">
