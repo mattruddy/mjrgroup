@@ -42,7 +42,7 @@ export const ServiceLayout = ({
           </VStack>
           <VStack p="12px">
             <Image
-              w="300px"
+              w="200px"
               alt={`service-${title}`}
               src={imageSrc}
               fallbackSrc="https://via.placeholder.com/150"
