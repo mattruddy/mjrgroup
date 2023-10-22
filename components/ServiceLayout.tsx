@@ -29,7 +29,7 @@ export const ServiceLayout = ({
   return (
     <VStack>
       <VStack align={"start"}>
-        <Heading size={"xl"} pl="24px" pt="24px">
+        <Heading size={"xl"} pl="24px" pt="24px" color="green.400">
           {title}
         </Heading>
         <HStack flexDir={{ base: "column-reverse", md: "row" }}>
