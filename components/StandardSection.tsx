@@ -36,7 +36,7 @@ export const StandardSection = ({
         {sections?.map((section, i) => (
           <WrapItem key={i}>
             <Card p="12px" w="250px" variant={"unstyled"}>
-              <CardHeader pb="12px" fontWeight={"bold"}>
+              <CardHeader pb="6px" fontWeight={"bold"}>
                 {section.title}
               </CardHeader>
               <CardBody>
