@@ -59,33 +59,33 @@ export const PAGE_DATA = {
         },
         additionalSections: [
           {
-            title: "Individual Taxes",
-            body: `Our clientele is as diverse as the financial landscapes they navigate and we understand that every individual has distinct financial needs. No matter your situation, we're dedicated to helping you achieve financial success with our tailored approach.
+            title: "Our Clientele",
+            body: `The clients we serve are as diverse as the financial landscapes they navigate and we understand that every individual has distinct financial needs. No matter your situation, we're dedicated to helping you achieve financial success with our tailored approach.
             `,
             sections: [
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Real Estate Rental Owners",
+                body: "Whether you're contemplating flipping property or pursuing long-term rental income, our tax preparers provide insights into capital improvements, management expenses, and tax implications to help you make informed decisions.",
               },
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Multistate Earners",
+                body: "For those with income spanning multiple states or countries, our experts conduct in-depth research on treaties and reciprocity agreements to prevent double taxation, ensuring your financial affairs remain streamlined and efficient.",
               },
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Self Employed",
+                body: "Small business owners benefit from our expertise in maximizing deductions while adhering to IRS guidelines. We not only prepare your return but also assist in future tax planning, ensuring your business takes full advantage of available tax breaks and credits.",
               },
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Expats",
+                body: "Navigating foreign income and international tax regulations can be a daunting task for expatriates. We specialize in helping expats streamline their tax filings while ensuring compliance with the intricate web of global financial laws.",
               },
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Nonresidents",
+                body: "Our team understands the complexities involved in earning income in the U.S. as a non-resident, whether you're here on a visa or conducting business. We'll guide you through the intricacies of reporting your income to both U.S. and your home country's tax authorities.",
               },
               {
-                title: "Testing",
-                body: "Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities.",
+                title: "Day Traders",
+                body: "Our experienced accountants help day traders navigate the complexities of Mark-to-Market accounting, ensuring accurate reporting of gains and losses. We offer expert guidance on making the right elections and providing comprehensive financial disclosures to optimize your tax strategy.",
               },
             ],
           },
