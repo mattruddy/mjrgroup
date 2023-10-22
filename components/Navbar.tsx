@@ -293,9 +293,14 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Services",
     children: [
       {
-        label: "Tax Preparation",
+        label: "Individual Taxes",
         subLabel: "Trending Design to inspire you",
-        href: "/tax",
+        href: "/tax/individual",
+      },
+      {
+        label: "Small Business Taxes",
+        subLabel: "Trending Design to inspire you",
+        href: "/tax/business",
       },
       {
         label: "IRS Representation",

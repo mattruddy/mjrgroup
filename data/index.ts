@@ -51,23 +51,34 @@ export const PAGE_DATA = {
       },
     },
     taxPreparation: {
-      sectionOne: {
-        title: "Tax Preparation",
-        imageFile: "/services/tax-return.png",
-        body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
-      },
-      additionalSections: [
-        {
+      individual: {
+        sectionOne: {
           title: "Individual Taxes",
-          body: `Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities. It involves gathering financial documents, calculating taxable income, deductions, and credits, and then accurately completing and filing annual income tax returns. Tax professionals also offer guidance on tax planning, compliance with tax laws, and addressing specific tax-related questions and concerns. They may represent clients in dealings with tax authorities and provide advice on optimizing tax outcomes based on individual financial situations.
-          `,
+          imageFile: "/services/tax-return.png",
+          body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
         },
-        {
-          title: "Business Taxes",
-          body: `Business tax preparation is a process that involves organizing and calculating a company's financial information to fulfill its tax obligations. This includes determining the business's taxable income, eligible deductions, and credits, as well as ensuring compliance with tax laws and regulations. Tax professionals, such as certified public accountants (CPAs) or tax consultants, assist businesses in accurately completing and filing their tax returns. Additionally, they may offer advice on tax-saving strategies, provide guidance during audits or tax-related inquiries, and help with tax planning to optimize the company's financial situation. Business tax preparation is essential for maintaining financial transparency, meeting legal requirements, and minimizing tax liabilities.
-          `,
+        additionalSections: [
+          {
+            title: "Individual Taxes",
+            body: `Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities. It involves gathering financial documents, calculating taxable income, deductions, and credits, and then accurately completing and filing annual income tax returns. Tax professionals also offer guidance on tax planning, compliance with tax laws, and addressing specific tax-related questions and concerns. They may represent clients in dealings with tax authorities and provide advice on optimizing tax outcomes based on individual financial situations.
+            `,
+          },
+        ],
+      },
+      business: {
+        sectionOne: {
+          title: "Small Business Taxes",
+          imageFile: "/services/tax-return.png",
+          body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
         },
-      ],
+        additionalSections: [
+          {
+            title: "Business Taxes",
+            body: `Business tax preparation is a process that involves organizing and calculating a company's financial information to fulfill its tax obligations. This includes determining the business's taxable income, eligible deductions, and credits, as well as ensuring compliance with tax laws and regulations. Tax professionals, such as certified public accountants (CPAs) or tax consultants, assist businesses in accurately completing and filing their tax returns. Additionally, they may offer advice on tax-saving strategies, provide guidance during audits or tax-related inquiries, and help with tax planning to optimize the company's financial situation. Business tax preparation is essential for maintaining financial transparency, meeting legal requirements, and minimizing tax liabilities.
+            `,
+          },
+        ],
+      },
     },
     irsRepresentation: {
       sectionOne: {
