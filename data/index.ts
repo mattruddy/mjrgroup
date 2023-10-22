@@ -60,7 +60,7 @@ export const PAGE_DATA = {
         additionalSections: [
           {
             title: "Individual Taxes",
-            body: `Individual tax preparation is a service provided by tax professionals to help individuals and households manage their tax-related responsibilities. It involves gathering financial documents, calculating taxable income, deductions, and credits, and then accurately completing and filing annual income tax returns. Tax professionals also offer guidance on tax planning, compliance with tax laws, and addressing specific tax-related questions and concerns. They may represent clients in dealings with tax authorities and provide advice on optimizing tax outcomes based on individual financial situations.
+            body: `Our clientele is as diverse as the financial landscapes they navigate and we understand that every individual has distinct financial needs. No matter your situation, we're dedicated to helping you achieve financial success with our tailored approach.
             `,
           },
         ],
