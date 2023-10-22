@@ -55,7 +55,7 @@ export const PAGE_DATA = {
         sectionOne: {
           title: "Individual Taxes",
           imageFile: "/services/tax-return.png",
-          body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
+          body: "At MJR Group, tax preparation isn't just about numbers; it's about people. We understand that your financial life is as unique as you are, which is why our individual tax preparation services go far beyond the standard corporate tax experience. Whether you're a real estate rental owner, a multi-state earner, or self-employed, we're here to offer you a more personalized and caring touch. We're not just accountants, we're your financial allies.",
         },
         additionalSections: [
           {
