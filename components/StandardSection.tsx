@@ -33,9 +33,9 @@ export const StandardSection = ({
       </VStack>
       <Wrap justify={"center"}>
         {sections?.map((section, i) => (
-          <WrapItem key={i} p="12px">
-            <Card w="200px" variant={"unstyled"}>
-              <CardHeader>{section.title}</CardHeader>
+          <WrapItem key={i}>
+            <Card p="12px" w="250px" variant={"unstyled"}>
+              <CardHeader pb="12px">{section.title}</CardHeader>
               <CardBody>
                 <Quote body={section.body} showQuoteIcon={false} />
               </CardBody>
