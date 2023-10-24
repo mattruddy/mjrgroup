@@ -155,7 +155,7 @@ export const PAGE_DATA = {
       sectionTwo: {
         title: "Mission",
         body: `
-        Our mission is to offer individuals and businesses tailored, accurate tax solutions, minimize tax obligations, and build lasting client relationships by providing expert financial guidance and ensuring compliance.
+        Our mission is to help people and businesses with their taxes, making it simple and accurate. We want to build trust and long-lasting relationships by giving expert advice to minimize taxes and follow the rules.
         `,
       },
     },
