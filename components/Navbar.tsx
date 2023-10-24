@@ -72,7 +72,9 @@ export default function WithSubnavigation() {
           </Center>
         </Flex>
         <Flex>
-          <Heading size="md">MJR GROUP</Heading>
+          <Heading display={{ base: "none", md: "flex" }} size="md">
+            MJR GROUP
+          </Heading>
         </Flex>
       </Flex>
 
