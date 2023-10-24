@@ -4,7 +4,6 @@ import {
   Input,
   Button,
   FormErrorMessage,
-  Text,
   useToast,
   Select,
 } from "@chakra-ui/react";
@@ -15,21 +14,18 @@ const phoneRegExp =
   /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
 export type SERVICE_TYPE =
-  | "Tax Preparation"
+  | "Individual Taxes"
+  | "Business Taxes"
   | "IRS Representation"
   | "Business Consultation"
   | "QuickBooks Training";
 
 export const SERVICES: readonly SERVICE_TYPE[] = [
-  "Tax Preparation",
+  "Individual Taxes",
+  "Business Taxes",
   "IRS Representation",
   "Business Consultation",
   "QuickBooks Training",
-];
-
-const TAX_PREPARATION: readonly ("Individual Taxes" | "Business Taxes")[] = [
-  "Individual Taxes",
-  "Business Taxes",
 ];
 
 export const CONTACT_TYPES: readonly string[] = ["In Person", "Virtual (Zoom)"];
@@ -44,11 +40,6 @@ const ContactFormSchema = Yup.object().shape({
     .oneOf(CONTACT_TYPES)
     .required("contact type is required"),
   service: Yup.string().oneOf(SERVICES).required("service is required"),
-  taxType: Yup.string().when("service", {
-    is: "Tax Preparation",
-    then: (schema) => schema.oneOf(TAX_PREPARATION).required("Tax is required"),
-    otherwise: (schema) => schema,
-  }),
 });
 interface ContactFormProps {
   defaultService?: SERVICE_TYPE;
@@ -110,7 +101,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <FormControl mb="20px" isInvalid={!!formik.errors.name}>
-        <FormLabel>What is your full name?</FormLabel>
+        <FormLabel>Full Name</FormLabel>
         <Input
           placeholder="Full name"
           name={"name"}
@@ -120,9 +111,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
       </FormControl>
       <FormControl mb="20px" isInvalid={!!formik.errors.email}>
-        <FormLabel>
-          What is your <Text as="b">email address</Text>?
-        </FormLabel>
+        <FormLabel>Email Address</FormLabel>
         <Input
           placeholder="Email"
           name={"email"}
@@ -133,9 +122,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
       </FormControl>
       <FormControl mb="20px" isInvalid={!!formik.errors.phoneNumber}>
-        <FormLabel>
-          What is your <Text as="b">phone number</Text>?
-        </FormLabel>
+        <FormLabel>Phone Number</FormLabel>
         <Input
           placeholder="Phone number"
           onChange={formik.handleChange}
@@ -145,7 +132,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         <FormErrorMessage>{formik.errors.phoneNumber}</FormErrorMessage>
       </FormControl>
       <FormControl mb="20px" isInvalid={!!formik.errors.contact}>
-        <FormLabel>What is your preferred way of contact?</FormLabel>
+        <FormLabel>Contact Preference</FormLabel>
         <Select
           name="contact"
           onChange={formik.handleChange}
@@ -161,7 +148,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         <FormErrorMessage>{formik.errors.contact}</FormErrorMessage>
       </FormControl>
       <FormControl mb="20px" isInvalid={!!formik.errors.service}>
-        <FormLabel>What service are you interested in?</FormLabel>
+        <FormLabel>Service Needed</FormLabel>
         <Select
           name="service"
           onChange={formik.handleChange}
@@ -176,24 +163,6 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         </Select>
         <FormErrorMessage>{formik.errors.service}</FormErrorMessage>
       </FormControl>
-      {formik.values.service === "Tax Preparation" && (
-        <FormControl mb="20px" isInvalid={!!formik.errors.taxType}>
-          <FormLabel>What type of taxes?</FormLabel>
-          <Select
-            name="taxType"
-            onChange={formik.handleChange}
-            value={formik.values.taxType}
-            placeholder="Select a tax type"
-          >
-            {TAX_PREPARATION.map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
-          </Select>
-          <FormErrorMessage>{formik.errors.taxType}</FormErrorMessage>
-        </FormControl>
-      )}
       <Button isLoading={formik.isSubmitting} type="submit">
         Submit
       </Button>

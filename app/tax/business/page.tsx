@@ -12,7 +12,7 @@ export default function Tax() {
       title={title}
       body={body}
       imageSrc={imageFile}
-      defaultService="Tax Preparation"
+      defaultService="Business Taxes"
       sections={additionalSections}
     />
   );
