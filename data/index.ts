@@ -146,17 +146,10 @@ export const PAGE_DATA = {
       sectionOne: {
         imageSrc: "/logo/logo.png",
         body: `
-        How had she been so wrong? All her instincts and intuition completely failed her for the first time in her life. She had so heavily relied on both when making decisions up until this moment and she felt a seismic shift take place in her self-confidence. If she could be so completely wrong about something so simple as this, how could she make 
+        MJR Group was founded by Matt Ruddy, an Enrolled Agent, who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operated his own tax firm, TRCPA in Toms River, NJ.
         <br/>
         <br/>
-        decisions about really important things taking place in her life? She wasn't sure what she should do next.
-        Debbie had taken George for granted for more than fifteen years now. He wasn't sure what exactly had made him choose this time and place to address the issue, but he decided that now was the time. He looked straight into her eyes and just as she was about to speak, turned away and walked out the door.
-        <br/>
-        <br/>
-        Lori lived her life through the lens of a camera. She never realized this until this very moment as she scrolled through thousands of images on your computer. She could remember the exact moment each photo was taken. She could remember where she had been, what she was thinking as she tried to get the shot, the smells of the surrounding area, and even the emotions that she felt taking the photo, yet she had trouble remembering what she had for breakfast.
-        <br/>
-        <br/>
-        Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.
+        In 2019, a significant milestone occurred in MJR Group's history when TRCPA merged with MJR Group, expanding the company's services to include both tax representation and tax preparation. This merger brought together a wealth of experience, enhancing MJR Group's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
         `,
       },
       sectionTwo: {

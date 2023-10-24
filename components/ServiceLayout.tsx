@@ -5,6 +5,7 @@ import {
   Heading,
   Image,
   Stack,
+  Text,
   VStack,
 } from "@chakra-ui/react";
 import { Quote } from "./Quote";
@@ -61,6 +62,10 @@ export const ServiceLayout = ({
         ))}
         <VStack p="24px" align={"start"} w="100%">
           <Heading>Book Free Consultation</Heading>
+          <Text>
+            We offer services in person in Hudson County or Ocean County but
+            offer services remote via Zoom or over the phone
+          </Text>
           <Card m="12px" variant={"outline"} w="100%">
             <CardBody>
               <Stack w="100%">
