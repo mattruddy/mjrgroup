@@ -24,7 +24,6 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import Link from "../components/NextLink";
-import { useState } from "react";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -72,7 +71,13 @@ export default function WithSubnavigation() {
           </Center>
         </Flex>
         <Flex>
-          <Heading display={{ base: "none", md: "flex" }} size="md">
+          <Heading
+            as={Link}
+            _hover={{ textDecor: "none" }}
+            href="/"
+            display={{ base: "none", md: "flex" }}
+            size="md"
+          >
             MJR GROUP
           </Heading>
         </Flex>
