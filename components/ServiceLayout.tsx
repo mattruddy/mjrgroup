@@ -49,6 +49,7 @@ export const ServiceLayout = ({
               fallbackSrc="https://via.placeholder.com/150"
               rounded={"md"}
               shadow={"2xl"}
+              loading="eager"
             />
           </VStack>
         </HStack>
