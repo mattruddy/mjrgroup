@@ -126,6 +126,30 @@ export const PAGE_DATA = {
         imageFile: "/services/business.png",
         body: "Running a small business comes with financial challenges, and we're here to lend a hand. Whether you're starting a business, need bookkeeping assistance, require help with payroll, or managing sales tax, our consultation service has got your back. Our aim is to make things easier for you and guide you through the financial side of things. In this guide, we'll cover the services we offer to make your small business run smoother and stay on top of financial regulations.",
       },
+      additionalSections: [
+        {
+          title: "Business Consulting Services",
+          body: ``,
+          sections: [
+            {
+              title: "Payroll Services",
+              body: "We offer reliable payroll services that cover quarterly filings and on-time deposits, all at a fraction of the cost.",
+            },
+            {
+              title: "Bookkeeping",
+              body: "Is your QuickBooks a mess? Our certified bookkeeper can help. They'll set up, repair, and keep your accounting software in order, whether you use the online or desktop versions. Our QuickBooks ProAdvisor will handle your expenses, reconcile your accounts, and update your bookkeeping files.",
+            },
+            {
+              title: "Sales Tax Filing",
+              body: "If you're unsure about which products or services require sales tax, we're here to help. We'll simplify the sales tax laws and rules for you. Additionally, you can rely on us to handle your monthly deposits and quarterly filings, ensuring they're done on time to avoid costly penalties.",
+            },
+            {
+              title: "Business Formation",
+              body: "Let us kickstart your business by helping you incorporate. Unlike DIY websites, we're local accountants who register your business and assist in choosing the right business structure. Rely on licensed professionals to set up your business entity and prevent expensive fines and fees.",
+            },
+          ],
+        },
+      ],
     },
     quickBooksTraining: {
       sectionOne: {
