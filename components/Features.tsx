@@ -15,6 +15,7 @@ import { IoManSharp } from "react-icons/io5";
 import { BiSolidBusiness } from "react-icons/bi";
 import { SiQuickbooks } from "react-icons/si";
 import { TbPigMoney } from "react-icons/tb";
+import { GiMoneyStack } from "react-icons/gi";
 import { ReactElement } from "react";
 import Link from "../components/NextLink";
 import { PAGE_DATA } from "@/data";
@@ -76,10 +77,16 @@ export default function SplitWithImage() {
               }
             >
               <Feature
+                icon={<Icon as={GiMoneyStack} color={"blue.500"} w={5} h={5} />}
+                iconBg={useColorModeValue("blue.100", "blue.900")}
+                text={"Individual Taxes"}
+                href="tax/individual"
+              />
+              <Feature
                 icon={<Icon as={TbPigMoney} color={"yellow.500"} w={5} h={5} />}
                 iconBg={useColorModeValue("yellow.100", "yellow.900")}
-                text={"Tax Preparation"}
-                href="tax"
+                text={"Small Business Taxes"}
+                href="tax/business"
               />
               <Feature
                 icon={<Icon as={IoManSharp} color={"orange.500"} w={5} h={5} />}

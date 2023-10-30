@@ -301,27 +301,22 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Individual Taxes",
-        subLabel: "Trending Design to inspire you",
         href: "/tax/individual",
       },
       {
         label: "Small Business Taxes",
-        subLabel: "Trending Design to inspire you",
         href: "/tax/business",
       },
       {
         label: "IRS Representation",
-        subLabel: "Trending Design to inspire you",
         href: "/representation",
       },
       {
         label: "Business Consultation",
-        subLabel: "Trending Design to inspire you",
         href: "/business",
       },
       {
-        label: "QuickBooks Training",
-        subLabel: "Trending Design to inspire you",
+        label: "Free QuickBooks Training",
         href: "/quickbooks",
       },
     ],

@@ -55,7 +55,7 @@ export const PAGE_DATA = {
         sectionOne: {
           title: "Individual Taxes",
           imageFile: "/services/tax-return.png",
-          body: "At MJR Group, tax preparation isn't just about numbers; it's about people. We understand that your financial life is as unique as you are, which is why our individual tax preparation services go far beyond the standard corporate tax experience. Whether you're a real estate rental owner, a multi-state earner, or self-employed, we're here to offer you a more personalized and caring touch. We're not just accountants, we're your financial allies.",
+          body: "Tax preparation isn't just about numbers; it's about people. We understand that your financial life is as unique as you are, which is why our individual tax preparation services go far beyond the standard corporate tax experience. Whether you're a real estate rental owner, a multi-state earner, or self-employed, we're here to offer you a more personalized and caring touch. We're not just accountants, we're your financial allies.",
         },
         additionalSections: [
           {
@@ -95,35 +95,28 @@ export const PAGE_DATA = {
         sectionOne: {
           title: "Small Business Taxes",
           imageFile: "/services/tax-return.png",
-          body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
+          body: "Owning a small business comes with its unique challenges and joys. We understand the importance of keeping financial matters in order. One key part of this is dealing with taxes. We focus on assisting small business owners like you in managing their taxes without the stress. With this guide, we simplify small business tax essentials, providing you with the information and tools you need to make smart financial decisions and ensure your business's success",
         },
-        additionalSections: [
-          {
-            title: "Business Taxes",
-            body: `Business tax preparation is a process that involves organizing and calculating a company's financial information to fulfill its tax obligations. This includes determining the business's taxable income, eligible deductions, and credits, as well as ensuring compliance with tax laws and regulations. Tax professionals, such as certified public accountants (CPAs) or tax consultants, assist businesses in accurately completing and filing their tax returns. Additionally, they may offer advice on tax-saving strategies, provide guidance during audits or tax-related inquiries, and help with tax planning to optimize the company's financial situation. Business tax preparation is essential for maintaining financial transparency, meeting legal requirements, and minimizing tax liabilities.
-            `,
-          },
-        ],
       },
     },
     irsRepresentation: {
       sectionOne: {
         title: "IRS Representation",
         imageFile: "/services/irs-audit.png",
-        body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
+        body: "Dealing with the IRS can be tough, an Enrolled Agent is specialized in dealing with the IRS and helping individuals with their tax conflicts. Whether you're dealing with an IRS audit, looking into installment agreements, or considering an Offer in Compromise, our services are designed to assist you. We'll simplify the IRS representation process and offer you the expertise you need to handle your tax issues.",
       },
       additionalSections: [
         {
           title: "IRS Installment Agreements",
-          body: `Owing money to the IRS is stressful. But one of the remarkable things about the IRS is they base everything on the ability to pay. It doesn’t matter how much you owe. Rather, the focus is on your current financial situation. If you cannot afford large monthly payments, the IRS will not require large monthly payments. If you need help repaying IRS tax debt, contact me today to discuss payment options.`,
+          body: `Owing the IRS is stressful, but the good thing is they assess your payments based on what you can afford. It's not about the total amount you owe, but your present financial situation. If you can't handle big monthly payments, the IRS won't demand them. If you need assistance with your IRS tax debt, reach to explore payment choices.`,
         },
         {
           title: "IRS Offer in Compromise",
-          body: `Sometimes the amount owed to the IRS is insurmountable. It simply will never be repaid. In these cases, the IRS may settle the tax liability. But don’t be fooled by tax resolution companies who blindly promise to settle the debt instantly. The IRS offer in compromise program is a formal process, with many intricacies. More than half of all offers submitted are rejected. But our success rate is much higher. Why? Experience and honesty. We only file offers in compromise if we honestly believe they have a high success of being accepted, and we have the experience to know when that is the case. Contact me to discuss whether an IRS offer in compromise is a viable option for you.`,
+          body: `Sometimes, the IRS debt becomes unmanageable and might not ever be fully paid off. In such situations, the IRS can consider settling the tax liability. However, be cautious of tax resolution firms that promise instant debt settlement without understanding the process. The IRS offer in compromise program is a formal and complex procedure, with over half of the submitted offers getting rejected. We have a higher success rate due to our experience and honesty. We only pursue offers in compromise when we genuinely believe they have a strong chance of being accepted.`,
         },
         {
           title: "IRS Audits",
-          body: `Of all tax issues to have, an audit may be the most stressful. It’s stressful because it’s an unknown and new experience. But it’s not a new experience for me. As a tax attorney in NJ, I’ve handled audits ranging from substantiation audits of small businesses to audits involving complex accounting rules with millions of dollars at stake. As your tax attorney NJ, I’ll give you a realistic outlook of how the audit will proceed and what you can expect. Contact me about your IRS audit.`,
+          body: `Audits can be one of the most stressful tax issues to deal with because they're often unfamiliar. However, with the Enrolled Agent expertise, we've handled various audits, from small business checks to complex cases involving substantial amounts. We can offer you a straightforward overview of the audit process and what to expect.`,
         },
       ],
     },
@@ -131,14 +124,14 @@ export const PAGE_DATA = {
       sectionOne: {
         title: "Business Consultation",
         imageFile: "/services/business.png",
-        body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
+        body: "Running a small business comes with financial challenges, and we're here to lend a hand. Whether you're starting a business, need bookkeeping assistance, require help with payroll, or managing sales tax, our consultation service has got your back. Our aim is to make things easier for you and guide you through the financial side of things. In this guide, we'll cover the services we offer to make your small business run smoother and stay on top of financial regulations.",
       },
     },
     quickBooksTraining: {
       sectionOne: {
-        title: "QuickBooks Training",
+        title: "Free QuickBooks Training",
         imageFile: "/services/bookkeeping.png",
-        body: "Sitting in the sun, away from everyone who had done him harm in the past, he quietly listened to those who roamed by. He felt at peace in the moment, hoping it would last, but knowing the reprieve would soon come to an end. He closed his eyes, the sun beating down on face and he smiled. He smiled for the first time in as long as he could remember. Where do they get a random paragraph? he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.",
+        body: "We're here to help small businesses with free QuickBooks training. We understand the importance of keeping your financial records organized for tax time. In this program, we'll show you how to use QuickBooks to make your financial management easier. Join us, and we'll help you take control of your business finances for a smooth tax season.",
       },
     },
     about: {
