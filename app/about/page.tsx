@@ -50,7 +50,7 @@ export default function About() {
             alt="matt-tom"
             src="/matt-tom.jpg"
           />
-          <Quote body="Another day in the office for Tom & Matt. La Bonne Vie is a Condo Association where they provide bookkeping services and prepare taxes for. " />
+          <Quote body="Another day in the office for Tom & Matt where they a portfolio of condos in La Bonne Vie providing bookkeeping services as well as tax planning / preparation to ensure " />
         </VStack>
       </VStack>
     </VStack>
