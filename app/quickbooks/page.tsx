@@ -11,7 +11,7 @@ export default function QuickBooks() {
       title={title}
       body={body}
       imageSrc={imageFile}
-      defaultService="QuickBooks Training"
+      defaultService="Free QuickBooks Training"
     />
   );
 }

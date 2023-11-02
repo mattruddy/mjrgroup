@@ -107,7 +107,7 @@ export default function SplitWithImage() {
                   <Icon as={SiQuickbooks} color={"green.500"} w={5} h={5} />
                 }
                 iconBg={useColorModeValue("green.100", "green.900")}
-                text={"QuickBooks Training"}
+                text={"Free QuickBooks Training"}
                 href="quickbooks"
               />
             </Stack>
