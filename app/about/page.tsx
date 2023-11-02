@@ -33,7 +33,6 @@ export default function About() {
               alt="mjr-group-about"
               w="300px"
               src={sectionOne.imageSrc}
-              fallbackSrc="https://via.placeholder.com/150"
               shadow={"2xl"}
             />
           </VStack>

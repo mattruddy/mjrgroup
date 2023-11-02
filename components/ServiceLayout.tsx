@@ -46,7 +46,6 @@ export const ServiceLayout = ({
               w="200px"
               alt={`service-${title}`}
               src={imageSrc}
-              fallbackSrc="https://via.placeholder.com/150"
               rounded={"md"}
               shadow={"2xl"}
               loading="eager"
