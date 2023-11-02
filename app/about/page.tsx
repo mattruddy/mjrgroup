@@ -43,6 +43,16 @@ export default function About() {
           body={sectionTwo.body}
           isQuote
         />
+        <VStack py="12px" w="100%" justify={"center"}>
+          <Image
+            shadow={"2xl"}
+            rounded={"md"}
+            h="400px"
+            alt="matt-tom"
+            src="/matt-tom.jpg"
+          />
+          <Quote body="Another day in the office for Tom & Matt. La Bonne Vie is a Condo Association where they provide bookkeping services and prepare taxes for. " />
+        </VStack>
       </VStack>
     </VStack>
   );

@@ -32,7 +32,7 @@ export const StandardSection = ({
       <VStack p="12px">
         <Quote body={body} showQuoteIcon={isQuote} />
       </VStack>
-      <Wrap justify={"center"}>
+      <Wrap justify={"start"}>
         {sections?.map((section, i) => (
           <WrapItem key={i}>
             <Card p="12px" w="250px" variant={"unstyled"}>
