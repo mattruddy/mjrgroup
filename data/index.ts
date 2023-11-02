@@ -166,7 +166,7 @@ export const PAGE_DATA = {
         MJR Group was founded by Matt Ruddy, an Enrolled Agent, who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operated his own tax firm, TRCPA in Toms River, NJ.
         <br/>
         <br/>
-        In 2021, a significant milestone occurred in MJR Group's history when TRCPA merged with MJR Group, expanding the company's services to include both tax representation and tax preparation. This merger brought together a wealth of experience, enhancing MJR Group's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
+        In 2021, a significant milestone occurred in MJR Group's history when TRCPA partnered with MJR Group, expanding the company's services to include both tax representation and tax preparation. This merger brought together a wealth of experience, enhancing MJR Group's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
         `,
       },
       sectionTwo: {
