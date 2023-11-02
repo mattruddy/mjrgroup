@@ -49,8 +49,9 @@ export default function About() {
             h="400px"
             alt="matt-tom"
             src="/matt-tom.jpg"
+            mb="12px"
           />
-          <Quote body="Another day in the office for Tom & Matt where they a portfolio of condos in La Bonne Vie providing bookkeeping services as well as tax planning / preparation to ensure " />
+          <Quote body="Matt (left) and Tom (right) standing in front of the La Bonne Vie condominium" />
         </VStack>
       </VStack>
     </VStack>
