@@ -123,10 +123,6 @@ export const PAGE_DATA = {
           body: ``,
           sections: [
             {
-              title: "Payroll Services",
-              body: "We offer reliable payroll services that cover quarterly filings and on-time deposits, all at a fraction of the cost.",
-            },
-            {
               title: "Bookkeeping",
               body: "Is your QuickBooks a mess? Our certified bookkeeper can help. They'll set up, repair, and keep your accounting software in order, whether you use the online or desktop versions. Our QuickBooks ProAdvisor will handle your expenses, reconcile your accounts, and update your bookkeeping files.",
             },
@@ -137,6 +133,10 @@ export const PAGE_DATA = {
             {
               title: "Business Formation",
               body: "Let us kickstart your business by helping you incorporate. Unlike DIY websites, we're local accountants who register your business and assist in choosing the right business structure. Rely on licensed professionals to set up your business entity and prevent expensive fines and fees.",
+            },
+            {
+              title: "Payroll Services",
+              body: "We offer reliable payroll services that cover quarterly filings and on-time deposits, all at a fraction of the cost.",
             },
           ],
         },
