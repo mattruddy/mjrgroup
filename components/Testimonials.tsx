@@ -62,14 +62,13 @@ const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
 };
 
 export default function WithSpeechBubbles() {
-  const { title, subTitle, clients } = PAGE_DATA.page.home.sectionThree;
+  const { title, clients } = PAGE_DATA.page.home.sectionThree;
 
   return (
     <Box>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>{title}</Heading>
-          <Text>{subTitle}</Text>
         </Stack>
         <Wrap
           direction={{ base: "column", md: "row" }}

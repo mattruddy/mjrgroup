@@ -15,7 +15,6 @@ export const PAGE_DATA = {
       },
       sectionThree: {
         title: "Our Clients Speak",
-        subTitle: "We have been working with clients around the world",
         clients: [
           {
             name: "Dana Mabey",
