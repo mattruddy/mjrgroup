@@ -8,6 +8,7 @@ import {
   Container,
   Avatar,
   useColorModeValue,
+  Wrap,
 } from "@chakra-ui/react";
 import { PAGE_DATA } from "@/data";
 import { Quote } from "./Quote";
@@ -24,6 +25,8 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
       p={8}
       rounded={"xl"}
       align={"center"}
+      h={{ base: "100%", md: "250px" }}
+      w={{ base: "100%", md: "340px" }}
       pos={"relative"}
       _after={{
         content: `""`,
@@ -55,23 +58,12 @@ const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const TestimonialAvatar = ({
-  src,
-  name,
-  title,
-}: {
-  src: string;
-  name: string;
-  title: string;
-}) => {
+const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
-          {title}
-        </Text>
       </Stack>
     </Flex>
   );
@@ -87,24 +79,19 @@ export default function WithSpeechBubbles() {
           <Heading>{title}</Heading>
           <Text>{subTitle}</Text>
         </Stack>
-        <Stack
+        <Wrap
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 10, md: 4, lg: 10 }}
         >
           {clients.map((client, i) => (
             <Testimonial key={`${i}-${client.name}`}>
               <TestimonialContent>
-                <TestimonialHeading>{client.quote.title}</TestimonialHeading>
                 <Quote body={client.quote.body} showQuoteIcon />
               </TestimonialContent>
-              <TestimonialAvatar
-                src={client.imageSrc}
-                name={client.name}
-                title={client.occupation}
-              />
+              <TestimonialAvatar src={client.imageSrc} name={client.name} />
             </Testimonial>
           ))}
-        </Stack>
+        </Wrap>
       </Container>
     </Box>
   );

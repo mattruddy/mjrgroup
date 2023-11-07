@@ -18,33 +18,24 @@ export const PAGE_DATA = {
         subTitle: "We have been working with clients around the world",
         clients: [
           {
-            name: "Jane Cooper",
-            occupation: "CEO at ABC Corporation",
-            imageSrc:
-              "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
+            name: "Dana Mabey",
+            imageSrc: "/clients/dana.png",
             quote: {
-              title: "Efficient Collaborating",
-              body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.",
+              body: "Tom was very fast, efficient and affordable. I called Tom, sent him our info via email and he filed and sent our taxes in. I have been to big chains in the past and have been there for hours.. Tom is now my new accountant!! I highly recommend him!!!",
             },
           },
           {
-            name: "Jane Cooper",
-            occupation: "CEO at ABC Corporation",
-            imageSrc:
-              "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
+            name: "Bill Mecca",
+            imageSrc: "/clients/bill.png",
             quote: {
-              title: "Mindblowing Service",
-              body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.",
+              body: "I have used Tom Ruddy for my personal and business taxes for years. Always friendly, fast turnaround and accurate. What more can you ask for in a CPA?",
             },
           },
           {
-            name: "Jane Cooper",
-            occupation: "CEO at ABC Corporation",
-            imageSrc:
-              "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
+            name: "Lauren Nespoli",
+            imageSrc: "/clients/lauren.png",
             quote: {
-              title: "Intuitive Design",
-              body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.",
+              body: "Tom has been my personal accountant for years. He is quick, professional, and has made my somewhat complicated taxes a breeze for me! Taxes are no longer stressful. I would HIGHLY recommend him to anyone. A pleasure to work with.",
             },
           },
         ],
