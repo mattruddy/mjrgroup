@@ -50,14 +50,6 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const TestimonialHeading = ({ children }: { children: ReactNode }) => {
-  return (
-    <Heading as={"h3"} fontSize={"xl"}>
-      {children}
-    </Heading>
-  );
-};
-
 const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
@@ -82,6 +74,7 @@ export default function WithSpeechBubbles() {
         <Wrap
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 10, md: 4, lg: 10 }}
+          justify={"center"}
         >
           {clients.map((client, i) => (
             <Testimonial key={`${i}-${client.name}`}>
