@@ -26,7 +26,7 @@ export default function Contact() {
         p={{ base: "0", lg: "20px" }}
         minW={{ base: "100%", md: "500px" }}
       >
-        <Heading p="12px">Contact Us</Heading>
+        <Heading p="12px">Book a Free Consultation</Heading>
         <Card variant={"outline"} w="100%">
           <CardBody>
             <Stack w="100%">
