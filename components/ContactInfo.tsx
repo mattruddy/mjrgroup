@@ -19,7 +19,7 @@ export const ContactInfo = () => {
           </HStack>
           <HStack w="100%" justify={"space-between"}>
             <Text as="b">Email</Text>
-            <Link href="mailto:info@mjrgroupllc.com">info@mjrgroupllc.com</Link>
+            <Link href="mailto:matt@mjrgroupllc.com">matt@mjrgroupllc.com</Link>
           </HStack>
           <HStack pt="5" w="100%" justify={"space-between"}>
             <VStack align={"space-between"}>

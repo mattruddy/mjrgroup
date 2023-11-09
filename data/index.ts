@@ -4,7 +4,7 @@ export const PAGE_DATA = {
       sectionOne: {
         title: "Tax Services in Ocean & Hudson County NJ",
         subTitle:
-          "Welcome to MJR Group, where financial peace of mind begins. Our team of seasoned professionals, holding both Enrolled Agent and CPA certifications, are here to navigate the complexities of your finances, so you can focus on what matters most to you.",
+          "Family run tax business ",
       },
       sectionTwo: {
         title: "Accounting Services Tailored To You",
