@@ -47,12 +47,12 @@ export default function SmallWithSocial() {
         <HStack>
           <HStack>
             <Text as="b">Phone Number</Text>
-            <Text>(732) 814-3113</Text>
+            <Link href="tel:732-814-3113">732-814-3113</Link>
           </HStack>
           <Dot />
           <HStack>
             <Text as="b">Email</Text>
-            <Text>matt@mjrgroupllc.com</Text>
+            <Link href="mailto:matt@mjrgroupllc.com">matt@mjrgroupllc.com</Link>
           </HStack>
         </HStack>
       </VStack>
