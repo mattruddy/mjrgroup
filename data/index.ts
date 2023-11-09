@@ -4,7 +4,7 @@ export const PAGE_DATA = {
       sectionOne: {
         title: "Tax Services in Ocean & Hudson County NJ",
         subTitle:
-          "Family run tax business ",
+          "Local family operated tax business who's primary focus is on the individual and ensuring their financial success",
       },
       sectionTwo: {
         title: "Accounting Services Tailored To You",
