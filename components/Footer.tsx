@@ -32,24 +32,24 @@ export default function SmallWithSocial() {
     >
       <VStack justify="center" align={"center"}>
         <Heading size="sm">Services</Heading>
-        <HStack>
+        <HStack flexDir={{ base: "column", md: "row" }}>
           <NextLink href="/tax/individual">Individual</NextLink>
-          <Dot />
+          <Dot display={{ base: "none", md: "block" }} />
           <NextLink href="/tax/business">Business</NextLink>
-          <Dot />
+          <Dot display={{ base: "none", md: "block" }} />
           <NextLink href="/tax/individual">IRS Representation</NextLink>
-          <Dot />
+          <Dot display={{ base: "none", md: "block" }} />
           <NextLink href="/tax/individual">Business Consultation</NextLink>
-          <Dot />
+          <Dot display={{ base: "none", md: "block" }} />
           <NextLink href="/tax/individual">Free Quickbooks Training</NextLink>
         </HStack>
         <Divider />
-        <HStack>
+        <HStack flexDir={{ base: "column", sm: "row" }}>
           <HStack>
             <Text as="b">Phone Number</Text>
             <Link href="tel:732-814-3113">732-814-3113</Link>
           </HStack>
-          <Dot />
+          <Dot display={{ base: "none", sm: "block" }} />
           <HStack>
             <Text as="b">Email</Text>
             <Link href="mailto:matt@mjrgroupllc.com">matt@mjrgroupllc.com</Link>

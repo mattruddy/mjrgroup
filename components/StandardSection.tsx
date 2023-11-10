@@ -8,6 +8,7 @@ import {
   Wrap,
   WrapItem,
   Text,
+  Center,
 } from "@chakra-ui/react";
 import { Quote } from "./Quote";
 
@@ -32,20 +33,28 @@ export const StandardSection = ({
       <VStack p="12px">
         <Quote body={body} showQuoteIcon={isQuote} />
       </VStack>
-      <Wrap justify={"start"}>
-        {sections?.map((section, i) => (
-          <WrapItem key={i}>
-            <Card p="12px" w="250px" variant={"unstyled"}>
-              <CardHeader pb="6px" fontWeight={"bold"}>
-                {section.title}
-              </CardHeader>
-              <CardBody>
-                <Text fontSize={"sm"}>{section.body}</Text>
-              </CardBody>
-            </Card>
-          </WrapItem>
-        ))}
-      </Wrap>
+      <VStack w="100%" align={"center"}>
+        <Wrap w={{ base: "250px", sm: "508px", lg: "766px" }}>
+          {sections?.map((section, i) => (
+            <WrapItem key={i}>
+              <Center>
+                <Card
+                  p="12px"
+                  w={{ base: "100%", md: "250px" }}
+                  variant={"unstyled"}
+                >
+                  <CardHeader pb="6px" fontWeight={"bold"}>
+                    {section.title}
+                  </CardHeader>
+                  <CardBody>
+                    <Text fontSize={"sm"}>{section.body}</Text>
+                  </CardBody>
+                </Card>
+              </Center>
+            </WrapItem>
+          ))}
+        </Wrap>
+      </VStack>
     </VStack>
   );
 };
