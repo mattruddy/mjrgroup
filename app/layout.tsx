@@ -3,6 +3,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 import WithSubnavigation from "@/components/Navbar";
 import SmallWithSocial from "@/components/Footer";
+import { GA_TRACKING_ID } from "@/utils/ga";
 
 export default function RootLayout({
   children,
@@ -15,6 +16,22 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <head>
         <title>MJR Group</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />

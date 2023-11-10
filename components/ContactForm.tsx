@@ -1,3 +1,4 @@
+import { gaEvent } from "@/utils/ga";
 import {
   FormControl,
   FormLabel,
@@ -67,6 +68,10 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
       name,
       taxType,
     }) => {
+      gaEvent("consultation", {
+        event_category: "consultation",
+        event_label: "Consultation Booked",
+      });
       const resp = await fetch("/api", {
         method: "POST",
         body: JSON.stringify({
