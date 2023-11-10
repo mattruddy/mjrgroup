@@ -7,9 +7,9 @@ export const PAGE_DATA = {
           "Local family operated tax business who's primary focus is on the individual and ensuring their financial success",
       },
       sectionTwo: {
-        title: "Accounting Services Tailored To You",
+        title: "What Services We Offer",
         subTitle:
-          "We're more than just accountants; we're your dedicated partners in prosperity. Let's build a brighter financial future together. Need help with tax prep? Trust our expertise. Facing IRS issues? We're your dedicated representatives. Seeking mastery in QuickBooks? Count on us for professional guidance.",
+          "Below is a list of services we provide to individuals. You can click the link to go to the the service page with a better description as to what it is and what we can do to help.",
         imageSrc:
           "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       },
