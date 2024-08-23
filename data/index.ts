@@ -2,7 +2,7 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: "Tax Services in Ocean & Hudson County NJ",
+        title: "Tax Services in Ocean County NJ",
         subTitle:
           "Local family operated tax business focusing on individuals and ensuring their financial success",
       },
@@ -143,9 +143,9 @@ export const PAGE_DATA = {
     },
     quickBooksTraining: {
       sectionOne: {
-        title: "Free QuickBooks Training",
+        title: "Bookkeeping",
         imageFile: "/services/bookkeeping.png",
-        body: "We're here to help small businesses with free QuickBooks training. We understand the importance of keeping your financial records organized for tax time. In this program, we'll show you how to use QuickBooks to make your financial management easier. Join us, and we'll help you take control of your business finances for a smooth tax season.",
+        body: "We offer comprehensive financial management tailored to your business's unique needs. Our expert team handles everything from daily transaction recording to monthly financial reports, ensuring your books are always accurate and up-to-date. By entrusting us with your bookkeeping, you gain valuable insights into your financial health, save time, and reduce stress, allowing you to focus on growing your business. Our meticulous approach helps you make informed decisions, stay compliant with regulations, and ultimately drive your success forward.",
       },
     },
     about: {

@@ -316,8 +316,8 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "/business",
       },
       {
-        label: "Free QuickBooks Training",
-        href: "/quickbooks",
+        label: "Bookkeeping",
+        href: "/bookkeeping",
       },
     ],
   },

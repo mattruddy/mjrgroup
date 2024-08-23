@@ -19,14 +19,14 @@ export type SERVICE_TYPE =
   | "Business Taxes"
   | "IRS Representation"
   | "Business Consultation"
-  | "Free QuickBooks Training";
+  | "Bookkeeping";
 
 export const SERVICES: readonly SERVICE_TYPE[] = [
   "Individual Taxes",
   "Business Taxes",
   "IRS Representation",
   "Business Consultation",
-  "Free QuickBooks Training",
+  "Bookkeeping",
 ];
 
 export const CONTACT_TYPES: readonly string[] = ["In Person", "Virtual (Zoom)"];

@@ -37,11 +37,11 @@ export default function SmallWithSocial() {
           <Dot display={{ base: "none", md: "block" }} />
           <NextLink href="/tax/business">Business</NextLink>
           <Dot display={{ base: "none", md: "block" }} />
-          <NextLink href="/tax/individual">IRS Representation</NextLink>
+          <NextLink href="/representation">IRS Representation</NextLink>
           <Dot display={{ base: "none", md: "block" }} />
-          <NextLink href="/tax/individual">Business Consultation</NextLink>
+          <NextLink href="/business">Business Consultation</NextLink>
           <Dot display={{ base: "none", md: "block" }} />
-          <NextLink href="/tax/individual">Free Quickbooks Training</NextLink>
+          <NextLink href="/bookkeeping">Bookkeeping</NextLink>
         </HStack>
         <Divider />
         <HStack flexDir={{ base: "column", sm: "row" }}>

@@ -63,8 +63,8 @@ export const ServiceLayout = ({
         <VStack p="24px" align={"start"} w="100%">
           <Heading>Book Free Consultation</Heading>
           <Text>
-            We provide in-person services in Hudson County and Ocean County, as
-            well as remote services via Zoom or phone.
+            We provide in-person services in Ocean County, as well as remote
+            services via Zoom or phone.
           </Text>
           <Card m="12px" variant={"outline"} w="100%">
             <CardBody>
