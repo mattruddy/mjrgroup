@@ -56,7 +56,7 @@ export default function SmallWithSocial() {
           </HStack>
         </HStack>
       </VStack>
-      <Text>© 2023 MJR Group LLC. All rights reserved</Text>
+      <Text>© 2023 Matt Ruddy Inc. All rights reserved</Text>
     </VStack>
   );
 }

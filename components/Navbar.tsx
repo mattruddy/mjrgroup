@@ -78,7 +78,7 @@ export default function WithSubnavigation() {
             display={{ base: "none", md: "flex" }}
             size="md"
           >
-            MJR GROUP
+            MATT RUDDY INC
           </Heading>
         </Flex>
       </Flex>
