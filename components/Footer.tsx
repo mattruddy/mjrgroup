@@ -52,7 +52,7 @@ export default function SmallWithSocial() {
           <Dot display={{ base: "none", sm: "block" }} />
           <HStack>
             <Text as="b">Email</Text>
-            <Link href="mailto:matt@mjrgroupllc.com">matt@mjrgroupllc.com</Link>
+            <Link href="mailto:mjruddy94@gmail.com">mjruddy94@gmail.com</Link>
           </HStack>
         </HStack>
       </VStack>

@@ -96,7 +96,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
       } else {
         toast({
           title: "Error Sending Message",
-          description: "Please send an email directly to matt@mjrgroupllc.com",
+          description: "Please send an email directly to mjruddy94@gmail.com",
           status: "error",
         });
       }
