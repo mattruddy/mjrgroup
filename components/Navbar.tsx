@@ -78,7 +78,7 @@ export default function WithSubnavigation() {
             display={{ base: "none", md: "flex" }}
             size="md"
           >
-            MATT RUDDY INC
+            RUDDY & RUDDY
           </Heading>
         </Flex>
       </Flex>
@@ -304,7 +304,7 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "/tax/individual",
       },
       {
-        label: "Small Business Taxes",
+        label: "Business Taxes",
         href: "/tax/business",
       },
       {

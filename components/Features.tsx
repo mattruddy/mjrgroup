@@ -85,7 +85,7 @@ export default function SplitWithImage() {
               <Feature
                 icon={<Icon as={TbPigMoney} color={"yellow.500"} w={5} h={5} />}
                 iconBg={useColorModeValue("yellow.100", "yellow.900")}
-                text={"Small Business Taxes"}
+                text={"Business Taxes"}
                 href="tax/business"
               />
               <Feature

@@ -2,9 +2,9 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: "Tax Services in Ocean County NJ",
+        title: "Accounting, Taxation & Advisory",
         subTitle:
-          "Local family operated tax business focusing on individuals and ensuring their financial success",
+          "Tax business focusing on the financial success for business and individuals",
       },
       sectionTwo: {
         title: "What Services We Offer",
@@ -63,7 +63,7 @@ export const PAGE_DATA = {
               },
               {
                 title: "Self Employed",
-                body: "Small business owners benefit from our expertise in maximizing deductions while adhering to IRS guidelines. We not only prepare your return but also assist in future tax planning, ensuring your business takes full advantage of available tax breaks and credits.",
+                body: "Business owners benefit from our expertise in maximizing deductions while adhering to IRS guidelines. We not only prepare your return but also assist in future tax planning, ensuring your business takes full advantage of available tax breaks and credits.",
               },
               {
                 title: "Expats",
@@ -83,9 +83,9 @@ export const PAGE_DATA = {
       },
       business: {
         sectionOne: {
-          title: "Small Business Taxes",
+          title: "Business Taxes",
           imageFile: "/services/tax-return.png",
-          body: "Owning a small business comes with its unique challenges and joys. We understand the importance of keeping financial matters in order. One key part of this is dealing with taxes. We focus on assisting small business owners like you in managing their taxes without the stress. With this guide, we simplify small business tax essentials, providing you with the information and tools you need to make smart financial decisions and ensure your business's success",
+          body: "Owning a business comes with its unique challenges and joys. We understand the importance of keeping financial matters in order. One key part of this is dealing with taxes. We focus on assisting business owners like you in managing their taxes without the stress. With this guide, we simplify business tax essentials, providing you with the information and tools you need to make smart financial decisions and ensure your business's success",
         },
       },
     },
@@ -106,7 +106,7 @@ export const PAGE_DATA = {
         },
         {
           title: "IRS Audits",
-          body: `Audits can be one of the most stressful tax issues to deal with because they're often unfamiliar. However, with the Enrolled Agent expertise, we've handled various audits, from small business checks to complex cases involving substantial amounts. We can offer you a straightforward overview of the audit process and what to expect.`,
+          body: `Audits can be one of the most stressful tax issues to deal with because they're often unfamiliar. However, with the Enrolled Agent expertise, we've handled various audits, from business checks to complex cases involving substantial amounts. We can offer you a straightforward overview of the audit process and what to expect.`,
         },
       ],
     },
@@ -114,7 +114,7 @@ export const PAGE_DATA = {
       sectionOne: {
         title: "Business Consultation",
         imageFile: "/services/business.png",
-        body: "Running a small business comes with financial challenges, and we're here to lend a hand. Whether you're starting a business, need bookkeeping assistance, require help with payroll, or managing sales tax, our consultation service has got your back. Our aim is to make things easier for you and guide you through the financial side of things. In this guide, we'll cover the services we offer to make your small business run smoother and stay on top of financial regulations.",
+        body: "Running a business comes with financial challenges, and we're here to lend a hand. Whether you're starting a business, need bookkeeping assistance, require help with payroll, or managing sales tax, our consultation service has got your back. Our aim is to make things easier for you and guide you through the financial side of things. In this guide, we'll cover the services we offer to make your business run smoother and stay on top of financial regulations.",
       },
       additionalSections: [
         {
@@ -149,14 +149,14 @@ export const PAGE_DATA = {
       },
     },
     about: {
-      title: "About Matt Ruddy Inc",
+      title: "About Ruddy & Ruddy LLC",
       sectionOne: {
-        imageSrc: "/logo/logo.png",
+        imageSrc: "/logo/full logo.png",
         body: `
-        Matt Ruddy Inc was founded by Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
+        Ruddy & Ruddy LLC was founded by Tom Ruddy, a Certified Public Accountant (CPA) and his son Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
         <br/>
         <br/>
-        TRCPA & Matt Ruddy Inc decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
+        TRCPA & Ruddy & Ruddy LLC decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
         `,
       },
       sectionTwo: {
