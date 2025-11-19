@@ -1,5 +1,4 @@
-import { Box, HStack, Text, VStack } from "@chakra-ui/layout";
-import { Icon } from "@chakra-ui/react";
+import { Box, HStack, Icon, VStack, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 
