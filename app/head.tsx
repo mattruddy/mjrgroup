@@ -15,7 +15,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
-        content="https://www.ruddyandruddy.com/og-image.jpg"
+        content="https://www.ruddyandruddy.com/og-image.png"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -30,7 +30,7 @@ export default function Head() {
       />
       <meta
         name="twitter:image"
-        content="https://www.ruddyandruddy.com/og-image.jpg"
+        content="https://www.ruddyandruddy.com/og-image.png"
       />
 
       <link rel="icon" href="/favicon.ico" />
