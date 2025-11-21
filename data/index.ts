@@ -4,7 +4,7 @@ export const PAGE_DATA = {
       sectionOne: {
         title: "Accounting, Taxation & Advisory",
         subTitle:
-          "Tax business focusing on the financial success for business and individuals",
+          "Tax business focusing on the financial success for businesses and individuals",
       },
       sectionTwo: {
         title: "What Services We Offer",
@@ -153,10 +153,10 @@ export const PAGE_DATA = {
       sectionOne: {
         imageSrc: "/logo/full logo.png",
         body: `
-        Ruddy & Ruddy LLC was founded by Tom Ruddy, a Certified Public Accountant (CPA) and his son Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
+        Ruddy & Ruddy LLC was founded by Tom Ruddy, a Certified Public Accountant (CPA) and his son Matt Ruddy, an Enrolled Agent (EA). Tom Ruddy, a well-established Certified Public Accountant (CPA) operated his own tax firm TRCPA located in Toms River, NJ for multiple decades primarily focusing on tax preparation. Matt's expertise in taxation was cultivated during his early career while working alongside his father. Matt launched a firm of his own specializing in tax representation work.
         <br/>
         <br/>
-        TRCPA & Ruddy & Ruddy LLC decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
+        Tom Ruddy & Matt Ruddy decided to form a partnership, Ruddy & Ruddy, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
         `,
       },
       sectionTwo: {
